@@ -11,3 +11,7 @@ This repository contains the raw data used in my blog series on microprocessor t
 ### License
 
 All raw data and my own plots are available under a Creative Commons Attribution 4.0 International Public License, see file [LICENSE.txt](LICENSE.txt) for details.
+
+### Building
+
+See [BUILD.md](BUILD.md) for build requirements and commands.
