@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import os
 import re
 import shutil
@@ -29,6 +30,8 @@ from pypdf.generic import (
 
 
 ROOT = Path(__file__).resolve().parent
+VERIFIED_DIR = ROOT / "50yrs-verified"
+VERIFIED_CSV = VERIFIED_DIR / "50-years-verified-chart-points.csv"
 SVG_NS = "http://www.w3.org/2000/svg"
 XLINK_NS = "http://www.w3.org/1999/xlink"
 SVG_FONT_STACK = "Helvetica, Arial, Liberation Sans, sans-serif"
@@ -235,14 +238,22 @@ def gnuplot_quote(value: str) -> str:
     return '"' + value.replace("\\", "\\\\").replace('"', '\\"') + '"'
 
 
-def render_raw(fmt: str, destination: Path, edition: Edition) -> None:
+def render_raw(
+    fmt: str,
+    destination: Path,
+    edition: Edition,
+    *,
+    title: str | None = None,
+    update_attribution: str | None = None,
+    data_paths: dict[str, Path] | None = None,
+) -> None:
     left, right, bottom, top = edition.margins
     expression = ";".join(
         (
             f"OUTPUT_TERMINAL={gnuplot_quote(terminal_for(fmt, edition))}",
             f"OUTPUT_FILE={gnuplot_quote(str(destination))}",
-            f"PLOT_TITLE={gnuplot_quote(edition.title)}",
-            f"UPDATE_ATTRIBUTION={gnuplot_quote(edition.update_attribution)}",
+            f"PLOT_TITLE={gnuplot_quote(title or edition.title)}",
+            f"UPDATE_ATTRIBUTION={gnuplot_quote(update_attribution or edition.update_attribution)}",
             f"X_RANGE_MAX={edition.x_range_max}",
             f"Y_RANGE_MAX={edition.y_range_max}",
             f"LABEL_X={edition.label_x}",
@@ -273,8 +284,17 @@ def render_raw(fmt: str, destination: Path, edition: Edition) -> None:
         f"{gnuplot_quote(f'#{transparency:02X}{POINT_RGB[series.key]}')}"
         for series in SERIES
     ]
+    data_path_expressions = [
+        f"DATA_{series.key.upper()}={gnuplot_quote(str(data_paths[series.key]))}"
+        for series in SERIES
+    ] if data_paths else []
     expression = ";".join(
-        (expression, *marker_scale_expressions, *point_color_expressions)
+        (
+            expression,
+            *marker_scale_expressions,
+            *point_color_expressions,
+            *data_path_expressions,
+        )
     )
     subprocess.run(
         ["gnuplot", "-e", expression, str(ROOT / "plot.gnuplot")],
@@ -337,7 +357,10 @@ def structure_svg(
     output_path: Path,
     points: dict[str, list[Point]],
     edition: Edition,
+    title: str | None = None,
+    update_attribution: str | None = None,
 ) -> None:
+    chart_title = title or edition.title
     tree = ET.parse(raw_path)
     root = tree.getroot()
     plot_groups = [
@@ -427,7 +450,7 @@ def structure_svg(
             frame_sources.append(group)
         elif paths and group.find(f".//{{{SVG_NS}}}text") is not None:
             tick_sources.append(group)
-        elif text_value == edition.title:
+        elif text_value == chart_title:
             title_source = group
         elif len(group) != 0:
             raise RuntimeError(f"unclassified SVG canvas group: {text_value!r}")
@@ -550,7 +573,7 @@ def structure_svg(
     annotations = svg_group("chart-annotations", "chart-component", "Attribution notes")
     annotation_specs = (
         ("Original data up to", "annotation-original-data"),
-        ("New plot and data", "annotation-updated-data"),
+        (update_attribution or "New plot and data", "annotation-updated-data"),
     )
     for prefix, identifier in annotation_specs:
         matches = [source for value, source in text_by_value.items() if value.startswith(prefix)]
@@ -571,7 +594,7 @@ def structure_svg(
     root_title = root.find(f"{{{SVG_NS}}}title")
     root_description = root.find(f"{{{SVG_NS}}}desc")
     if root_title is not None:
-        root_title.text = edition.title
+        root_title.text = chart_title
     if root_description is not None:
         root_description.text = "Editable vector chart with semantically named groups"
     canvas.set("id", "chart")
@@ -787,8 +810,12 @@ def structure_eps(raw_path: Path, output_path: Path, points: dict[str, list[Poin
             raise RuntimeError(f"{series.key}: expected {expected} EPS markers, found {found}")
 
     point_at_line: dict[int, Point] = {}
+    first_marker_lines: dict[int, str] = {}
+    last_marker_lines: dict[int, str] = {}
     for series in SERIES:
         point_at_line.update(zip(matches[series.key], points[series.key], strict=True))
+        first_marker_lines[matches[series.key][0]] = series.key
+        last_marker_lines[matches[series.key][-1]] = series.key
 
     output: list[str] = []
     for line_number, line in enumerate(lines):
@@ -796,7 +823,7 @@ def structure_eps(raw_path: Path, output_path: Path, points: dict[str, list[Poin
         if point is None:
             output.append(line)
             continue
-        if point.index == 1:
+        if line_number in first_marker_lines:
             output.extend(
                 (
                     f"%%BeginObject: series-{point.series.key}",
@@ -812,7 +839,7 @@ def structure_eps(raw_path: Path, output_path: Path, points: dict[str, list[Poin
         if point.comment:
             output.append(f"%%PointComment: {point.comment}")
         output.extend(("gsave", line, "grestore", "%%EndObject"))
-        if point.index == len(points[point.series.key]):
+        if line_number in last_marker_lines:
             output.append("%%EndObject")
     output_path.write_text("\n".join(output) + "\n", encoding="latin-1")
 
@@ -1103,10 +1130,59 @@ def verify_png(path: Path, edition: Edition) -> None:
 
 
 def install_output(raw_path: Path, output_path: Path) -> None:
+    output_path.parent.mkdir(parents=True, exist_ok=True)
     os.replace(raw_path, output_path)
 
 
-def generate(formats: Iterable[str], editions: Iterable[Edition]) -> None:
+def verified_points(edition: Edition) -> dict[str, list[Point]]:
+    if edition.years != 50:
+        raise ValueError("the verified dataset is available only for the 50-year edition")
+    originals = parse_points(edition)
+    by_identifier = {
+        f"series-{point.identifier}": point
+        for series in SERIES
+        for point in originals[series.key]
+    }
+    selected = {series.key: [] for series in SERIES}
+    with VERIFIED_CSV.open(newline="", encoding="utf-8") as stream:
+        for row in csv.DictReader(stream):
+            point_id = row["point_id"]
+            point = by_identifier.get(point_id)
+            if point is None:
+                raise RuntimeError(f"verified CSV contains unknown point ID: {point_id}")
+            if (
+                row["series"] != point.series.key
+                or row["plot_year"] != point.year
+                or row["plot_value"] != point.value
+                or int(row["source_line"]) != point.source_line
+            ):
+                raise RuntimeError(f"verified CSV does not round-trip {point_id}")
+            selected[point.series.key].append(point)
+    if sum(map(len, selected.values())) != 421:
+        raise RuntimeError("verified CSV must contain exactly 421 chart points")
+    return selected
+
+
+def write_filtered_data(directory: Path, points: dict[str, list[Point]]) -> dict[str, Path]:
+    directory.mkdir(parents=True, exist_ok=True)
+    paths: dict[str, Path] = {}
+    for series in SERIES:
+        path = directory / series.filename
+        lines = []
+        for point in points[series.key]:
+            suffix = f" # {point.comment}" if point.comment else ""
+            lines.append(f"{point.year} {point.value}{suffix}")
+        path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        paths[series.key] = path
+    return paths
+
+
+def generate(
+    formats: Iterable[str],
+    editions: Iterable[Edition],
+    *,
+    verified_only: bool = False,
+) -> None:
     if shutil.which("gnuplot") is None:
         raise SystemExit("gnuplot is required; install it with 'brew install gnuplot' or your package manager")
 
@@ -1114,19 +1190,43 @@ def generate(formats: Iterable[str], editions: Iterable[Edition]) -> None:
         temp_dir = Path(temporary)
         staged: dict[tuple[str, str], Path] = {}
         for edition in editions:
-            points = parse_points(edition)
+            points = verified_points(edition) if verified_only else parse_points(edition)
             actual_counts = tuple(len(points[series.key]) for series in SERIES)
-            if actual_counts != edition.expected_counts:
+            expected_counts = (74, 98, 58, 98, 93) if verified_only else edition.expected_counts
+            if actual_counts != expected_counts:
                 raise RuntimeError(
                     f"{edition.years}-year source point counts are {actual_counts}, "
-                    f"expected {edition.expected_counts}"
+                    f"expected {expected_counts}"
                 )
+            data_paths = write_filtered_data(temp_dir / "verified-data", points) if verified_only else None
+            chart_title = (
+                "50 Years of Verified Microprocessor Trend Data"
+                if verified_only else edition.title
+            )
+            update_attribution = (
+                "Verified subset: 421 of 465 observations matched to cited sources"
+                if verified_only else edition.update_attribution
+            )
             for fmt in formats:
                 raw_path = temp_dir / f"{edition.years}-raw.{fmt}"
                 structured_path = temp_dir / f"{edition.years}-structured.{fmt}"
-                render_raw(fmt, raw_path, edition)
+                render_raw(
+                    fmt,
+                    raw_path,
+                    edition,
+                    title=chart_title,
+                    update_attribution=update_attribution,
+                    data_paths=data_paths,
+                )
                 if fmt == "svg":
-                    structure_svg(raw_path, structured_path, points, edition)
+                    structure_svg(
+                        raw_path,
+                        structured_path,
+                        points,
+                        edition,
+                        chart_title,
+                        update_attribution,
+                    )
                     verify_svg(structured_path, points)
                 elif fmt == "pdf":
                     structure_pdf(raw_path, structured_path, points)
@@ -1141,7 +1241,10 @@ def generate(formats: Iterable[str], editions: Iterable[Edition]) -> None:
 
         for edition in editions:
             for fmt in formats:
-                output_path = edition.directory / f"{edition.basename}.{fmt}"
+                if verified_only:
+                    output_path = VERIFIED_DIR / f"50-years-verified-processor-trend.{fmt}"
+                else:
+                    output_path = edition.directory / f"{edition.basename}.{fmt}"
                 install_output(staged[(edition.key, fmt)], output_path)
                 print(f"generated {output_path.relative_to(ROOT)}")
 
@@ -1162,10 +1265,19 @@ def main() -> None:
         default=list(EDITIONS),
         help="year editions to generate (default: 40 42 48 50)",
     )
+    parser.add_argument(
+        "--verified-only",
+        action="store_true",
+        help="generate the separately curated 50-year verified dataset chart",
+    )
     args = parser.parse_args()
     requested = list(dict.fromkeys(args.formats))
-    selected_editions = [EDITIONS[key] for key in dict.fromkeys(args.editions)]
-    generate(requested, selected_editions)
+    selected_editions = (
+        [EDITIONS["50"]]
+        if args.verified_only
+        else [EDITIONS[key] for key in dict.fromkeys(args.editions)]
+    )
+    generate(requested, selected_editions, verified_only=args.verified_only)
 
 
 if __name__ == "__main__":

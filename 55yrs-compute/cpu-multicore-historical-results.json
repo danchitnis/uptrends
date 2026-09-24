@@ -1,0 +1,43 @@
+{
+  "scope": "published SPEC integer base rate with exactly one enabled physical CPU chip",
+  "additional_devices": [
+    {
+      "device_id": "spec-ibm-power4-plus-2003-06",
+      "name": "IBM POWER4+",
+      "vendor": "IBM",
+      "market": "server",
+      "release_date": "2003-06-01",
+      "physical_cores": 2,
+      "reference_url": "https://open.spec.org/cpu2000/results/res2003q2/cpu2000-20030527-02198.html"
+    },
+    {
+      "device_id": "spec-ibm-power8-10-core-2015-10",
+      "name": "IBM POWER8 (10-core configuration)",
+      "vendor": "IBM",
+      "market": "server",
+      "release_date": "2015-10-01",
+      "physical_cores": 10,
+      "reference_url": "https://www.spec.org/cpu2006/results/res2015q4/cpu2006-20151103-37953.html"
+    }
+  ],
+  "results": [
+    {"benchmark": "SPECint_rate_base2000", "device_id": "spec-ibm-power4-plus-2003-06", "value": 15.2, "chips": 1, "system": "IBM eServer pSeries 615 Model 6E3", "hardware_availability": "2003-06", "reference_url": "https://open.spec.org/cpu2000/results/res2003q2/cpu2000-20030527-02198.html"},
+    {"benchmark": "SPECint_rate_base2000", "device_id": "cornell-ibm-power5-2004-06-01", "value": 30.3, "chips": 1, "system": "IBM POWER5 1650 MHz one-chip configuration", "hardware_availability": "2004-08", "reference_url": "https://www.spec.org/cpu2000/results/res2004q3/cpu2000-20040804-03310.pdf"},
+    {"benchmark": "SPECint_rate_base2000", "device_id": "cornell-intel-pentium-d-840-2005-05-01", "value": 32.7, "chips": 1, "system": "Fujitsu Siemens CELSIUS M440", "hardware_availability": "2005-07", "reference_url": "https://open.spec.org/cpu2000/results/res2005q4/cpu2000-20051208-05160.html"},
+    {"benchmark": "SPECint_rate_base2000", "device_id": "cornell-intel-core-2-duo-e6700-2006-07-01", "value": 58.7, "chips": 1, "system": "Dell Precision Workstation 390", "hardware_availability": "2006-07", "reference_url": "https://www.spec.org/cpu2000/results/res2006q3/cpu2000-20060705-06403.pdf"},
+    {"benchmark": "SPECint_rate_base2000", "device_id": "cornell-intel-core-2-ex-x6800-2006-07-01", "value": 63.5, "chips": 1, "system": "Dell Precision Workstation 390", "hardware_availability": "2006-07", "reference_url": "https://open.spec.org/cpu2000/results/res2006q3/cpu2000-20060705-06399.html"},
+    {"benchmark": "SPECint_rate_base2000", "device_id": "cornell-amd-athlon-64-fx-62-windsor-2006-07-01", "value": 43.7, "chips": 1, "system": "ASUS M2N32-SLI Deluxe", "hardware_availability": "2006-07", "reference_url": "https://open.spec.org/cpu2000/results/res2006q3/cpu2000-20060904-07199.html"},
+    {"benchmark": "SPECint_rate_base2006", "device_id": "cornell-sun-ultrasparc-t2-niagara-2-2007-07-01", "value": 73.0, "chips": 1, "system": "Sun SPARC Enterprise T5120", "hardware_availability": "2007-10", "reference_url": "https://www.spec.org/cpu2006/results/res2007q4/cpu2006-20071009-02247.html"},
+    {"benchmark": "SPECint_rate_base2006", "device_id": "cornell-intel-core-2-ex-qx6800-2007-04-01", "value": 56.2, "chips": 1, "system": "Intel D975XBX2 motherboard", "hardware_availability": "2007-09", "reference_url": "https://www.spec.org/cpu2006/results/res2007q4/cpu2006-20071112-02551.html"},
+    {"benchmark": "SPECint_rate_base2006", "device_id": "cornell-intel-core-i7-965-2008-11-01", "value": 117, "chips": 1, "system": "ASUSTeK Asus P6T Deluxe", "hardware_availability": "2008-11", "reference_url": "https://www.spec.org/cpu2006/results/res2008q4/cpu2006-20081024-05712.pdf"},
+    {"benchmark": "SPECint_rate_base2006", "device_id": "inline-opteron-2435-2009-06", "value": 82.0, "chips": 1, "system": "HP ProLiant DL165 G6", "hardware_availability": "2009-06", "reference_url": "https://www.spec.org/cpu2006/results/res2009q2/cpu2006-20090525-07505.html"},
+    {"benchmark": "SPECint_rate_base2006", "device_id": "inline-xeon-x5680-2010-03", "value": 181, "chips": 1, "system": "Fujitsu PRIMERGY BX922 S2", "hardware_availability": "2010-03", "reference_url": "https://www.spec.org/cpu2006/results/res2010q2/cpu2006-20100505-10861.html"},
+    {"benchmark": "SPECint_rate_base2006", "device_id": "newdata-xeon-x5690-2011-02", "value": 215, "chips": 1, "system": "Itautec Servidor MX214", "hardware_availability": "2011-07", "reference_url": "https://www.spec.org/cpu2006/results/res2012q1/cpu2006-20120126-19377.html"},
+    {"benchmark": "SPECint_rate_base2006", "device_id": "newdata-xeon-e5-2690-2012-05", "value": 343, "chips": 1, "system": "NEC Express5800/R120d-1M", "hardware_availability": "2012-04", "reference_url": "https://www.spec.org/cpu2006/results/res2012q2/cpu2006-20120521-21893.html"},
+    {"benchmark": "SPECint_rate_base2006", "device_id": "newdata-opteron-6380-2012-11", "value": 246, "chips": 1, "system": "Supermicro A+ Server 1012G-MTF", "hardware_availability": "2012-11", "reference_url": "https://www.spec.org/cpu2006/results/res2013q1/cpu2006-20121106-24981.pdf"},
+    {"benchmark": "SPECint_rate_base2006", "device_id": "newdata-xeon-e5-2697v2-2013-09", "value": 466, "chips": 1, "system": "NEC Express5800/B120e-h", "hardware_availability": "2013-09", "reference_url": "https://www.spec.org/cpu2006/results/res2014q1/cpu2006-20140123-28264.pdf"},
+    {"benchmark": "SPECint_rate_base2006", "device_id": "newdata-xeon-e5-2699v3-2014-09", "value": 655, "chips": 1, "system": "HP ProLiant BL460c Gen9", "hardware_availability": "2015-05", "reference_url": "https://www.spec.org/cpu2006/results/res2015q4/cpu2006-20151005-37633.html"},
+    {"benchmark": "SPECint_rate_base2006", "device_id": "spec-ibm-power8-10-core-2015-10", "value": 482, "chips": 1, "system": "IBM Power S812LC", "hardware_availability": "2015-10", "reference_url": "https://www.spec.org/cpu2006/results/res2015q4/cpu2006-20151103-37953.html"},
+    {"benchmark": "SPECint_rate_base2006", "device_id": "newdata-xeon-e5-2699v4-2016-04", "value": 860, "chips": 1, "system": "HPE ProLiant DL120 Gen9", "hardware_availability": "2016-03", "reference_url": "https://spec.org/cpu2006/results/res2016q2/cpu2006-20160517-41397.html"}
+  ]
+}

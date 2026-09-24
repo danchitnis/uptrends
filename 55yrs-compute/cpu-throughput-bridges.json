@@ -1,0 +1,26 @@
+{
+  "method": "median of log(score_new / score_old) for published one-chip results on the same processor model; educational estimate, not a SPEC conversion",
+  "base_device_id": "spec-ibm-power4-plus-2003-06",
+  "base_suite": "SPECint_rate_base2000",
+  "base_score": 15.2,
+  "base_index": 100,
+  "bridges": [
+    {
+      "from": "SPECint_rate_base2000",
+      "to": "SPECint_rate_base2006",
+      "pairs": [
+        {"processor": "Intel Core 2 Duo E6700", "old_score": 58.7, "new_score": 29.4, "old_url": "https://www.spec.org/cpu2000/results/res2006q3/cpu2000-20060705-06403.pdf", "new_url": "https://www.spec.org/cpu2006/results/res2007q3/cpu2006-20070723-01554.pdf"},
+        {"processor": "Intel Core 2 Extreme X6800", "old_score": 63.5, "new_score": 31.1, "old_url": "https://open.spec.org/cpu2000/results/res2006q3/cpu2000-20060705-06399.html", "new_url": "https://www.spec.org/cpu2006/results/res2006q3/cpu2006-20060904-00082.pdf"},
+        {"processor": "AMD Athlon 64 FX-62", "old_score": 43.7, "new_score": 21.8, "old_url": "https://open.spec.org/cpu2000/results/res2006q3/cpu2000-20060904-07199.html", "new_url": "https://www.spec.org/cpu2006/results/res2006q3/cpu2006-20060904-00079.pdf"}
+      ]
+    },
+    {
+      "from": "SPECint_rate_base2006",
+      "to": "SPECrate2017_int_base",
+      "pairs": [
+        {"processor": "AMD EPYC 7601 / HPE Cloudline CL3150 Gen10", "old_score": 1070, "new_score": 131, "old_url": "https://spec.org/cpu2006/results/res2018q1/cpu2006-20171212-51326.pdf", "new_url": "https://www.spec.org/cpu2017/results/res2018q1/cpu2017-20171212-01664.html"},
+        {"processor": "AMD EPYC 7601 / one-chip systems", "old_score": 1060, "new_score": 135, "old_url": "https://www.spec.org/cpu2006/results/res2017q2/cpu2006-20170529-47129.html", "new_url": "https://www.spec.org/cpu2017/results/res2017q4/cpu2017-20171211-01450.html"}
+      ]
+    }
+  ]
+}

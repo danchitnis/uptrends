@@ -27,6 +27,11 @@ if (!exists("POINT_COLOR_FREQUENCY")) POINT_COLOR_FREQUENCY = "#008800"
 if (!exists("POINT_COLOR_SPECINT")) POINT_COLOR_SPECINT = "#0000BB"
 if (!exists("POINT_COLOR_TRANSISTORS")) POINT_COLOR_TRANSISTORS = "#CC6600"
 if (!exists("POINT_COLOR_WATTS")) POINT_COLOR_WATTS = "#BB0000"
+if (!exists("DATA_CORES")) DATA_CORES = "cores.dat"
+if (!exists("DATA_FREQUENCY")) DATA_FREQUENCY = "frequency.dat"
+if (!exists("DATA_SPECINT")) DATA_SPECINT = "specint.dat"
+if (!exists("DATA_TRANSISTORS")) DATA_TRANSISTORS = "transistors.dat"
+if (!exists("DATA_WATTS")) DATA_WATTS = "watts.dat"
 
 eval "set terminal " . OUTPUT_TERMINAL
 set output OUTPUT_FILE
@@ -96,8 +101,8 @@ set label "Original data up to the year 2010 collected and plotted by M. Horowit
 set label UPDATE_ATTRIBUTION at 1970,3e-3 tc ls 11 font ATTRIBUTION_FONT offset 0,ATTRIBUTION_Y_OFFSET
 
 plot \
- "cores.dat"        using 1:2 ls 1 with points, \
- "frequency.dat"    using 1:2 ls 2 with points, \
- "specint.dat"      using 1:2 ls 3 with points, \
- "transistors.dat"  using 1:2 ls 4 with points, \
- "watts.dat"        using 1:2 ls 5 with points
+ DATA_CORES        using 1:2 ls 1 with points, \
+ DATA_FREQUENCY    using 1:2 ls 2 with points, \
+ DATA_SPECINT      using 1:2 ls 3 with points, \
+ DATA_TRANSISTORS  using 1:2 ls 4 with points, \
+ DATA_WATTS        using 1:2 ls 5 with points

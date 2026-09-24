@@ -1,0 +1,137 @@
+{
+  "description": "Secondary Apple M-series specifications added only where a cited value or reproducible estimate is available. These are not Apple-published transistor counts.",
+  "devices": [
+    {
+      "device_id": "apple-m4-pro",
+      "metrics": {
+        "transistors_million": {
+          "value": 41000,
+          "value_kind": "calculated",
+          "confidence": "medium",
+          "source_tier": "secondary",
+          "references": [
+            "https://www.laptopmag.com/laptops/macbooks/apple-m4-m3-biggest-differences-tradeoffs",
+            "https://www.apple.com/newsroom/2024/05/apple-introduces-m4-chip/",
+            "https://www.apple.com/newsroom/2023/10/apple-unveils-m3-m3-pro-and-m3-max-the-most-advanced-chips-for-a-personal-computer/"
+          ],
+          "calculation_operands": {"m4_billion": 28, "m3_pro_billion": 37, "m3_billion": 25},
+          "calculation_expression": "round(28 * 37 / 25) * 1000 million transistors",
+          "notes": "Approximate cross-generation ratio estimate, not a disclosed M4 Pro count. Architectural differences may make the estimate inaccurate."
+        },
+        "frequency_ghz": {
+          "value": 4.52,
+          "value_kind": "direct",
+          "confidence": "medium",
+          "source_tier": "secondary",
+          "references": ["https://www.macworld.com/article/556384/apple-processors-pro-max-ultra-iphone-ipad-mac-benchmarks.html"],
+          "clock_basis": "reported peak performance-core clock",
+          "notes": "Macworld-reported peak performance-core clock; not Apple's published base clock."
+        },
+        "power_w": {
+          "value": 46,
+          "value_kind": "direct",
+          "confidence": "medium",
+          "source_tier": "secondary",
+          "references": ["https://www.macworld.com/article/556384/apple-processors-pro-max-ultra-iphone-ipad-mac-benchmarks.html"],
+          "notes": "Macworld-reported 14-core M4 Pro TDP; secondary estimate, not a measured package-power result."
+        }
+      }
+    },
+    {
+      "device_id": "apple-m4-max",
+      "metrics": {
+        "transistors_million": {
+          "value": 95000,
+          "value_kind": "direct",
+          "confidence": "medium",
+          "source_tier": "secondary",
+          "references": ["https://www.macworld.com/article/556384/apple-processors-pro-max-ultra-iphone-ipad-mac-benchmarks.html"],
+          "notes": "Macworld-reported approximate 95-billion count; Apple has not published an official M4 Max total."
+        },
+        "frequency_ghz": {
+          "value": 4.52,
+          "value_kind": "direct",
+          "confidence": "medium",
+          "source_tier": "secondary",
+          "references": ["https://www.macworld.com/article/556384/apple-processors-pro-max-ultra-iphone-ipad-mac-benchmarks.html"],
+          "clock_basis": "reported peak performance-core clock",
+          "notes": "Macworld-reported peak performance-core clock; not Apple's published base clock."
+        },
+        "power_w": {
+          "value": 70,
+          "value_kind": "direct",
+          "confidence": "medium",
+          "source_tier": "secondary",
+          "references": ["https://www.macworld.com/article/556384/apple-processors-pro-max-ultra-iphone-ipad-mac-benchmarks.html"],
+          "notes": "Macworld-reported 16-core M4 Max TDP; secondary estimate, not a measured package-power result."
+        }
+      }
+    },
+    {
+      "device_id": "apple-m5",
+      "metrics": {
+        "transistors_million": {
+          "value": 28000,
+          "value_kind": "direct",
+          "confidence": "medium",
+          "source_tier": "secondary",
+          "references": ["https://www.macworld.com/article/556384/apple-processors-pro-max-ultra-iphone-ipad-mac-benchmarks.html"],
+          "notes": "Macworld-reported count; Apple has not published an official M5 transistor total. Treat this as a secondary estimate."
+        },
+        "frequency_ghz": {
+          "value": 4.61,
+          "value_kind": "direct",
+          "confidence": "medium",
+          "source_tier": "secondary",
+          "references": ["https://www.macworld.com/article/556384/apple-processors-pro-max-ultra-iphone-ipad-mac-benchmarks.html"],
+          "clock_basis": "reported peak performance-core clock",
+          "notes": "Macworld-reported peak performance-core clock; not Apple's published base clock."
+        },
+        "power_w": {
+          "value": 30,
+          "value_kind": "direct",
+          "confidence": "medium",
+          "source_tier": "secondary",
+          "references": ["https://www.macworld.com/article/556384/apple-processors-pro-max-ultra-iphone-ipad-mac-benchmarks.html"],
+          "notes": "Macworld-reported MacBook Pro M5 TDP; secondary estimate, not a measured package-power result."
+        }
+      }
+    },
+    {
+      "device_id": "apple-m5-pro",
+      "metrics": {
+        "frequency_ghz": {
+          "value": 4.61,
+          "value_kind": "direct",
+          "confidence": "medium",
+          "source_tier": "secondary",
+          "references": ["https://www.macworld.com/article/556384/apple-processors-pro-max-ultra-iphone-ipad-mac-benchmarks.html"],
+          "clock_basis": "reported peak performance-core clock",
+          "notes": "Macworld-reported peak super-core clock; not Apple's published base clock."
+        }
+      }
+    },
+    {
+      "device_id": "apple-m5-max",
+      "metrics": {
+        "frequency_ghz": {
+          "value": 4.61,
+          "value_kind": "direct",
+          "confidence": "medium",
+          "source_tier": "secondary",
+          "references": ["https://www.macworld.com/article/556384/apple-processors-pro-max-ultra-iphone-ipad-mac-benchmarks.html"],
+          "clock_basis": "reported peak super-core clock",
+          "notes": "Macworld-reported peak super-core clock; not Apple's published base clock."
+        },
+        "power_w": {
+          "value": 72,
+          "value_kind": "direct",
+          "confidence": "medium",
+          "source_tier": "secondary",
+          "references": ["https://www.macworld.com/article/556384/apple-processors-pro-max-ultra-iphone-ipad-mac-benchmarks.html"],
+          "notes": "Macworld-reported 40-GPU-core M5 Max TDP; secondary estimate, not a measured package-power result."
+        }
+      }
+    }
+  ]
+}

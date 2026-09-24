@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-09-23",
+  "benchmark": "Geekbench 7 single-core",
+  "anchor_device_id": "newdata-m1-2020-09",
+  "anchor_normalized_value": 59.9,
+  "anchor_geekbench7_score": 2190,
+  "anchor_reference_url": "https://github.com/karlrupp/microprocessor-trend-data/blob/master/newdata.txt#L38",
+  "aggregate_reference_url": "https://browser.geekbench.com/mac-benchmarks",
+  "results": [
+    {"device_id":"newdata-m1-2020-09","score":2190,"system":"Mac mini (Late 2020), M1 8-core CPU","evidence":"aggregate"},
+    {"device_id":"apple-m1-pro","score":2202,"system":"MacBook Pro 14-inch (2021), M1 Pro 10-core CPU","evidence":"aggregate"},
+    {"device_id":"newdata-m1-max-2021-08","score":2218,"system":"MacBook Pro 14-inch (2021), M1 Max 10-core CPU","evidence":"aggregate"},
+    {"device_id":"apple-m1-ultra","score":2216,"system":"Mac Studio, M1 Ultra 20-core CPU","evidence":"aggregate"},
+    {"device_id":"apple-m2","score":2359,"system":"MacBook Pro 13-inch (2022), M2 8-core CPU","evidence":"aggregate"},
+    {"device_id":"apple-m2-pro","score":2432,"system":"MacBook Pro 16-inch (2023), M2 Pro 12-core CPU","evidence":"aggregate"},
+    {"device_id":"apple-m2-max","score":2495,"system":"MacBook Pro 16-inch (2023), M2 Max 12-core CPU, 38-core GPU","evidence":"aggregate"},
+    {"device_id":"apple-m2-ultra","score":2523,"system":"Mac Studio (2023), M2 Ultra 24-core CPU, 76-core GPU","evidence":"aggregate"},
+    {"device_id":"apple-m3","score":2769,"system":"MacBook Pro 14-inch (Nov 2023), M3 8-core CPU","evidence":"aggregate"},
+    {"device_id":"apple-m3-pro","score":2815,"system":"MacBook Pro 16-inch (Nov 2023), M3 Pro 12-core CPU","evidence":"aggregate"},
+    {"device_id":"apple-m3-max","score":2826,"system":"MacBook Pro 16-inch (Nov 2023), M3 Max 16-core CPU","evidence":"aggregate"},
+    {"device_id":"apple-m4","score":3278,"system":"Mac mini (2024), M4 10-core CPU","evidence":"aggregate"},
+    {"device_id":"apple-m4-pro","score":3375,"system":"MacBook Pro 16-inch (2024), M4 Pro 14-core CPU","evidence":"aggregate"},
+    {"device_id":"apple-m4-max","score":3382,"system":"MacBook Pro 16-inch (2024), M4 Max 16-core CPU, 40-core GPU","evidence":"aggregate"},
+    {"device_id":"apple-m3-ultra","score":2916,"system":"Mac Studio (2025), M3 Ultra 32-core CPU, 80-core GPU","evidence":"aggregate"},
+    {"device_id":"apple-m5","score":3643,"system":"MacBook Pro 14-inch (2025), M5 10-core CPU","evidence":"aggregate"},
+    {"device_id":"apple-m5-pro","score":3693,"system":"MacBook Pro 16-inch (2026), M5 Pro 18-core CPU","evidence":"aggregate"},
+    {"device_id":"apple-m5-max","score":3730,"system":"MacBook Pro 16-inch (2026), M5 Max 18-core CPU, 40-core GPU","evidence":"aggregate"},
+    {"device_id":"apple-m5-ultra","score":3774,"system":"Mac Studio (2026), M5 Ultra 36-core CPU, 256 GB RAM","evidence":"single_run","reference_url":"https://browser.geekbench.com/v7/cpu/354092"},
+    {"device_id":"apple-m6","score":4077,"system":"Mac mini (2026), M6 12-core CPU, 16 GB RAM","evidence":"single_run","reference_url":"https://browser.geekbench.com/v7/cpu/426192"}
+  ]
+}

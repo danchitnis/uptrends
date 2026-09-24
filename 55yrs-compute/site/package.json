@@ -1,0 +1,17 @@
+{
+  "name": "uptrends",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1",
+    "build": "astro build",
+    "preview": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "dependencies": {
+    "astro": "7.1.6"
+  },
+  "devDependencies": {
+    "wrangler": "^4.137.0"
+  }
+}

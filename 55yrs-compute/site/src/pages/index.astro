@@ -1,0 +1,79 @@
+---
+import { readFile } from 'node:fs/promises';
+import { join } from 'node:path';
+import '../styles/global.css';
+
+const edition = join(process.cwd(), '..');
+const svgFile = join(edition, '55-years-processor-compute-trends.svg');
+const dataFile = join(edition, '55-years-compute-chart-data.json');
+const svgSource = await readFile(svgFile, 'utf8');
+const chartData = JSON.parse(await readFile(dataFile, 'utf8'));
+const chartSvg = svgSource
+  .replace(/^<\?xml[^>]*\?>\s*/, '')
+  .replace(/<title(?:\s[^>]*)?>[\s\S]*?<\/title>/g, '')
+  .replace(/<g id="chart-title"[^>]*>[\s\S]*?<\/g>/, '')
+  .replace(/height="(\d+)" viewBox="0 0 (\d+) (\d+)"/, (_match, height, width, viewHeight) => {
+    if (height !== viewHeight) throw new Error('Unexpected chart SVG dimensions');
+    const cropTop = 90;
+    return `height="${Number(height) - cropTop}" viewBox="0 ${cropTop} ${width} ${Number(height) - cropTop}"`;
+  });
+const payload = JSON.stringify(chartData).replaceAll('<', '\\u003c');
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>55 Years of CPU and GPU Compute Trends</title>
+    <meta name="description" content="Explore 55 years of CPU and GPU hardware trends by device, with sourced values and visible data gaps." />
+    <script is:inline>
+      let saved;
+      try {
+        saved = localStorage.getItem('compute-trends-theme');
+      } catch { /* Storage can be disabled. */ }
+      document.documentElement.dataset.theme = saved === 'light' || saved === 'dark'
+        ? saved
+        : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    </script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="site-header">
+        <div>
+          <p class="eyebrow">Interactive dataset · 1971–2026</p>
+          <h1>55 years of CPU and GPU compute trends</h1>
+        </div>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch colour theme">
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.3 15.5A8.5 8.5 0 0 1 8.5 3.7 8.5 8.5 0 1 0 20.3 15.5Z" /></svg>
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" /></svg>
+        </button>
+      </header>
+
+      <section class="chart-section" aria-label="Interactive CPU and GPU trends chart">
+        <div id="interactive-chart" class="chart-wrap" set:html={chartSvg}></div>
+      </section>
+
+      <section id="device-panel" class="device-panel" aria-live="polite">
+        <div class="panel-empty">
+          <h2>Device details</h2>
+          <p>Hover for a quick summary. Click a chart marker to see its measurements and sources here.</p>
+        </div>
+      </section>
+
+      <section class="find-section" aria-labelledby="find-title">
+        <div>
+          <h2 id="find-title">Find device</h2>
+          <p>Show a processor or GPU in the details panel.</p>
+        </div>
+        <label for="device-picker" class="sr-only">Choose a device</label>
+        <select id="device-picker"><option value="">Choose a processor or GPU</option></select>
+      </section>
+    </main>
+    <div id="hover-bubble" class="hover-bubble" role="tooltip" hidden></div>
+    <script id="chart-data" type="application/json" is:inline set:html={payload}></script>
+    <script>
+      import '../scripts/chart.js';
+    </script>
+  </body>
+</html>

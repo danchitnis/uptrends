@@ -1,0 +1,4019 @@
+{
+  "description": "Second-pass curated provenance for the 50-year chart. Legacy matches require a unique vector supported by at least three source fields; ambiguous overlaps remain unresolved.",
+  "inline_processors": [
+    {
+      "frequency_ghz": "",
+      "inline_named": true,
+      "logical_threads_or_compute_units": "",
+      "manufacturer": "Intel",
+      "match_confidence": "direct",
+      "notes": "Processor identity is embedded in specint.dat and checked against an official SPEC result.",
+      "parallel_unit_basis": "logical threads",
+      "point_id": "series-specint-point-051",
+      "processor_id": "inline-xeon-w5580-2009-03",
+      "processor_name": "Xeon W5580",
+      "processor_type": "CPU",
+      "provenance_tier": "inline_name_plus_official_benchmark",
+      "reference_urls": [
+        "https://github.com/karlrupp/microprocessor-trend-data/blob/master/50yrs/specint.dat#L52",
+        "https://www.spec.org/cpu2006/results/res2009q2/cpu2006-20090330-06862.pdf"
+      ],
+      "release_month": "03",
+      "release_year": "2009",
+      "single_thread_performance_specint": "36.7",
+      "source_values": {
+        "specint": "36.7"
+      },
+      "transistors_billion": "",
+      "typical_power_tdp_watts": ""
+    },
+    {
+      "frequency_ghz": "",
+      "inline_named": true,
+      "logical_threads_or_compute_units": "",
+      "manufacturer": "AMD",
+      "match_confidence": "direct",
+      "notes": "Processor identity is embedded in specint.dat and checked against an official SPEC result.",
+      "parallel_unit_basis": "logical threads",
+      "point_id": "series-specint-point-052",
+      "processor_id": "inline-opteron-2435-2009-06",
+      "processor_name": "Opteron 2435",
+      "processor_type": "CPU",
+      "provenance_tier": "inline_name_plus_official_benchmark",
+      "reference_urls": [
+        "https://github.com/karlrupp/microprocessor-trend-data/blob/master/50yrs/specint.dat#L53",
+        "https://www.spec.org/cpu2006/results/res2009q2/cpu2006-20090608-07830.html"
+      ],
+      "release_month": "06",
+      "release_year": "2009",
+      "single_thread_performance_specint": "21.1",
+      "source_values": {
+        "specint": "21.1"
+      },
+      "transistors_billion": "",
+      "typical_power_tdp_watts": ""
+    },
+    {
+      "frequency_ghz": "",
+      "inline_named": true,
+      "logical_threads_or_compute_units": "",
+      "manufacturer": "Intel",
+      "match_confidence": "direct",
+      "notes": "Processor identity is embedded in specint.dat and checked against an official SPEC result.",
+      "parallel_unit_basis": "logical threads",
+      "point_id": "series-specint-point-053",
+      "processor_id": "inline-xeon-w5590-2009-08",
+      "processor_name": "Xeon W5590",
+      "processor_type": "CPU",
+      "provenance_tier": "inline_name_plus_official_benchmark",
+      "reference_urls": [
+        "https://github.com/karlrupp/microprocessor-trend-data/blob/master/50yrs/specint.dat#L54",
+        "https://www.spec.org/cpu2006/results/res2009q4/cpu2006-20090924-08646.pdf"
+      ],
+      "release_month": "08",
+      "release_year": "2009",
+      "single_thread_performance_specint": "37.7",
+      "source_values": {
+        "specint": "37.7"
+      },
+      "transistors_billion": "",
+      "typical_power_tdp_watts": ""
+    },
+    {
+      "frequency_ghz": "",
+      "inline_named": true,
+      "logical_threads_or_compute_units": "",
+      "manufacturer": "Intel",
+      "match_confidence": "direct",
+      "notes": "Processor identity is embedded in specint.dat and checked against an official SPEC result.",
+      "parallel_unit_basis": "logical threads",
+      "point_id": "series-specint-point-054",
+      "processor_id": "inline-xeon-x5680-2010-03",
+      "processor_name": "Xeon X5680",
+      "processor_type": "CPU",
+      "provenance_tier": "inline_name_plus_official_benchmark",
+      "reference_urls": [
+        "https://github.com/karlrupp/microprocessor-trend-data/blob/master/50yrs/specint.dat#L55",
+        "https://www.spec.org/cpu2006/results/res2010q3/cpu2006-20100705-12175.pdf"
+      ],
+      "release_month": "03",
+      "release_year": "2010",
+      "single_thread_performance_specint": "42",
+      "source_values": {
+        "specint": "42"
+      },
+      "transistors_billion": "",
+      "typical_power_tdp_watts": ""
+    },
+    {
+      "frequency_ghz": "",
+      "inline_named": true,
+      "logical_threads_or_compute_units": "",
+      "manufacturer": "AMD",
+      "match_confidence": "direct",
+      "notes": "Processor identity is embedded in specint.dat and checked against an official SPEC result.",
+      "parallel_unit_basis": "logical threads",
+      "point_id": "series-specint-point-055",
+      "processor_id": "inline-opteron-4184-2010-11",
+      "processor_name": "Opteron 4184",
+      "processor_type": "CPU",
+      "provenance_tier": "inline_name_plus_official_benchmark",
+      "reference_urls": [
+        "https://github.com/karlrupp/microprocessor-trend-data/blob/master/50yrs/specint.dat#L56",
+        "https://www.spec.org/cpu2006/results/res2011q1/cpu2006-20110110-14087.pdf"
+      ],
+      "release_month": "11",
+      "release_year": "2010",
+      "single_thread_performance_specint": "25.8",
+      "source_values": {
+        "specint": "25.8"
+      },
+      "transistors_billion": "",
+      "typical_power_tdp_watts": ""
+    }
+  ],
+  "legacy_point_matches": {
+    "series-cores-point-001": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.005.",
+      "processor_id": "cornell-intel-4004-1971-11-01"
+    },
+    "series-cores-point-002": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-intel-8008-1972-04-01"
+    },
+    "series-cores-point-003": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-intel-8080-1974-04-01"
+    },
+    "series-cores-point-004": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.006.",
+      "processor_id": "cornell-intel-8088-1979-06-01"
+    },
+    "series-cores-point-005": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-intel-286-1982-02-01"
+    },
+    "series-cores-point-006": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-intel-386-dx-1985-10-01"
+    },
+    "series-cores-point-007": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.005.",
+      "processor_id": "cornell-mips-r2000-1986-01-01"
+    },
+    "series-cores-point-008": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-mips-r3000-1988-06-01"
+    },
+    "series-cores-point-009": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-intel-486-dx-1989-04-01"
+    },
+    "series-cores-point-010": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-intel-486-dx-1990-05-01"
+    },
+    "series-cores-point-011": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-intel-486-dx2-1992-03-01"
+    },
+    "series-cores-point-013": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.005.",
+      "processor_id": "cornell-dec-alpha-21064-1992-10-01"
+    },
+    "series-cores-point-016": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.005.",
+      "processor_id": "cornell-dec-alpha-21164-1995-03-01"
+    },
+    "series-cores-point-017": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.004.",
+      "processor_id": "cornell-sun-supersparc-ii-1995-06-01"
+    },
+    "series-cores-point-020": {
+      "confidence": "high",
+      "note": "Curated second-pass match using source order and at least three corroborating neighboring metric fields.",
+      "processor_id": "cornell-dec-alpha-21164a-1996-07-01"
+    },
+    "series-cores-point-021": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-sun-ultrasparc-ii-1997-01-01"
+    },
+    "series-cores-point-024": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.005.",
+      "processor_id": "cornell-dec-alpha-21264-1998-07-01"
+    },
+    "series-cores-point-027": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.011.",
+      "processor_id": "cornell-amd-k7-1999-11-01"
+    },
+    "series-cores-point-030": {
+      "confidence": "high",
+      "note": "Curated second-pass match using source order and at least three corroborating neighboring metric fields.",
+      "processor_id": "cornell-intel-itanium-2001-05-01"
+    },
+    "series-cores-point-031": {
+      "confidence": "high",
+      "note": "Curated second-pass match using source order and at least three corroborating neighboring metric fields.",
+      "processor_id": "cornell-amd-k6-2-2001-06-01"
+    },
+    "series-cores-point-032": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.011.",
+      "processor_id": "cornell-intel-pentium-4-northwood-2002-01-01"
+    },
+    "series-cores-point-033": {
+      "confidence": "high",
+      "note": "Curated second-pass match using source order and at least three corroborating neighboring metric fields.",
+      "processor_id": "cornell-amd-athlon-xp-tbred-2002-06-01"
+    },
+    "series-cores-point-034": {
+      "confidence": "high",
+      "note": "Curated second-pass match using source order and at least three corroborating neighboring metric fields.",
+      "processor_id": "cornell-intel-itanium-2-2002-07-01"
+    },
+    "series-cores-point-035": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-dec-alpha-21364-2003-01-01"
+    },
+    "series-cores-point-036": {
+      "confidence": "high",
+      "note": "Curated second-pass match using source order and at least three corroborating neighboring metric fields.",
+      "processor_id": "cornell-amd-athlon-xp-barton-2003-02-01"
+    },
+    "series-cores-point-037": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.006.",
+      "processor_id": "cornell-amd-opteron-2003-04-01"
+    },
+    "series-cores-point-038": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-ibm-power5-2004-06-01"
+    },
+    "series-cores-point-040": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-intel-pentium-d-840-2005-05-01"
+    },
+    "series-cores-point-041": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-amd-athlon-64-fx-57-2005-06-01"
+    },
+    "series-cores-point-042": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-sun-ultrasparc-t1-niagara-2005-07-01"
+    },
+    "series-cores-point-043": {
+      "confidence": "high",
+      "note": "Curated second-pass match using source order and at least three corroborating neighboring metric fields.",
+      "processor_id": "cornell-amd-turion-64-x2-mt-40-lancaster-2005-08-01"
+    },
+    "series-cores-point-045": {
+      "confidence": "high",
+      "note": "Curated second-pass match using source order and at least three corroborating neighboring metric fields.",
+      "processor_id": "cornell-intel-core-duo-t2700-2006-08-01"
+    },
+    "series-cores-point-046": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.006.",
+      "processor_id": "cornell-intel-core-2-ex-qx6800-2007-04-01"
+    },
+    "series-cores-point-047": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-ibm-cell-2007-05-05"
+    },
+    "series-cores-point-048": {
+      "confidence": "high",
+      "note": "Curated second-pass match using source order and at least three corroborating neighboring metric fields.",
+      "processor_id": "cornell-ibm-power6-2007-05-01"
+    },
+    "series-cores-point-049": {
+      "confidence": "high",
+      "note": "Curated second-pass match using source order and at least three corroborating neighboring metric fields.",
+      "processor_id": "cornell-amd-turion-64-x2-tl-60-tyler-2007-06-01"
+    },
+    "series-cores-point-050": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.012.",
+      "processor_id": "cornell-sun-ultrasparc-t2-niagara-2-2007-07-01"
+    },
+    "series-cores-point-052": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.004.",
+      "processor_id": "cornell-intel-core-2-duo-e8400-2008-01-01"
+    },
+    "series-cores-point-053": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.006.",
+      "processor_id": "cornell-amd-phenom-x3-8850-2008-10-01"
+    },
+    "series-cores-point-054": {
+      "confidence": "high",
+      "note": "Curated second-pass match using source order and at least three corroborating neighboring metric fields.",
+      "processor_id": "cornell-intel-core-i7-965-2008-11-01"
+    },
+    "series-cores-point-057": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.011.",
+      "processor_id": "cornell-intel-gainestown-w5580-2009-04-01"
+    },
+    "series-cores-point-058": {
+      "confidence": "high",
+      "note": "Curated second-pass match using source order and at least three corroborating neighboring metric fields.",
+      "processor_id": "cornell-intel-dunnington-x7460-2009-04-01"
+    },
+    "series-cores-point-059": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 3 corroborating fields (cores, frequency, transistors); mean log error 0.002.",
+      "processor_id": "cornell-sun-rock-2009-09-01"
+    },
+    "series-frequency-point-001": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.005.",
+      "processor_id": "cornell-intel-4004-1971-11-01"
+    },
+    "series-frequency-point-002": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-intel-8008-1972-04-01"
+    },
+    "series-frequency-point-003": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-intel-8080-1974-04-01"
+    },
+    "series-frequency-point-004": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.006.",
+      "processor_id": "cornell-intel-8088-1979-06-01"
+    },
+    "series-frequency-point-005": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-intel-286-1982-02-01"
+    },
+    "series-frequency-point-006": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-intel-386-dx-1985-10-01"
+    },
+    "series-frequency-point-007": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.005.",
+      "processor_id": "cornell-mips-r2000-1986-01-01"
+    },
+    "series-frequency-point-008": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-mips-r3000-1988-06-01"
+    },
+    "series-frequency-point-009": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-intel-486-dx-1989-04-01"
+    },
+    "series-frequency-point-010": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-intel-486-dx-1990-05-01"
+    },
+    "series-frequency-point-011": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-intel-486-dx2-1992-03-01"
+    },
+    "series-frequency-point-012": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-sun-supersparc-1992-06-01"
+    },
+    "series-frequency-point-013": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.012.",
+      "processor_id": "cornell-mips-r4000-1992-06-01"
+    },
+    "series-frequency-point-014": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.005.",
+      "processor_id": "cornell-dec-alpha-21064-1992-10-01"
+    },
+    "series-frequency-point-015": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.013.",
+      "processor_id": "cornell-intel-pentium-1993-03-01"
+    },
+    "series-frequency-point-016": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.006.",
+      "processor_id": "cornell-amd-am486-1993-03-01"
+    },
+    "series-frequency-point-017": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-mips-r4600-1994-06-01"
+    },
+    "series-frequency-point-018": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-dec-alpha-21064a-1994-06-01"
+    },
+    "series-frequency-point-019": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.005.",
+      "processor_id": "cornell-dec-alpha-21164-1995-03-01"
+    },
+    "series-frequency-point-020": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.004.",
+      "processor_id": "cornell-sun-supersparc-ii-1995-06-01"
+    },
+    "series-frequency-point-021": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.011.",
+      "processor_id": "cornell-intel-pentium-pro-1995-11-01"
+    },
+    "series-frequency-point-023": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-amd-k5-1996-03-01"
+    },
+    "series-frequency-point-024": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-dec-alpha-21164a-1996-07-01"
+    },
+    "series-frequency-point-025": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-sun-ultrasparc-ii-1997-01-01"
+    },
+    "series-frequency-point-026": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-dec-alpha-21164pc-1997-03-01"
+    },
+    "series-frequency-point-027": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.003.",
+      "processor_id": "cornell-amd-k6-1997-04-01"
+    },
+    "series-frequency-point-028": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-intel-pentium-ii-klamath-1997-05-01"
+    },
+    "series-frequency-point-029": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.005.",
+      "processor_id": "cornell-dec-alpha-21264-1998-07-01"
+    },
+    "series-frequency-point-030": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-mips-r12000-1998-11-01"
+    },
+    "series-frequency-point-031": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.006.",
+      "processor_id": "cornell-amd-k6-2-1998-11-01"
+    },
+    "series-frequency-point-032": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-amd-k6-iii-1999-02-01"
+    },
+    "series-frequency-point-033": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-intel-pentium-iii-katmai-1999-02-01"
+    },
+    "series-frequency-point-034": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.011.",
+      "processor_id": "cornell-amd-k7-1999-11-01"
+    },
+    "series-frequency-point-036": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-sun-ultrasparc-iii-2000-09-01"
+    },
+    "series-frequency-point-037": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-intel-pentium-4-willamette-2000-11-01"
+    },
+    "series-frequency-point-038": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-intel-itanium-2001-05-01"
+    },
+    "series-frequency-point-039": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.012.",
+      "processor_id": "cornell-amd-k6-2-2001-06-01"
+    },
+    "series-frequency-point-040": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.011.",
+      "processor_id": "cornell-intel-pentium-4-northwood-2002-01-01"
+    },
+    "series-frequency-point-041": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-amd-athlon-xp-tbred-2002-06-01"
+    },
+    "series-frequency-point-042": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.002.",
+      "processor_id": "cornell-intel-itanium-2-2002-07-01"
+    },
+    "series-frequency-point-043": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-dec-alpha-21364-2003-01-01"
+    },
+    "series-frequency-point-044": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-amd-athlon-xp-barton-2003-02-01"
+    },
+    "series-frequency-point-045": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.006.",
+      "processor_id": "cornell-amd-opteron-2003-04-01"
+    },
+    "series-frequency-point-046": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-amd-athlon-64-fx-55-2004-06-01"
+    },
+    "series-frequency-point-047": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-ibm-power5-2004-06-01"
+    },
+    "series-frequency-point-048": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.013.",
+      "processor_id": "cornell-intel-pentium-4-prescott-2004-06-01"
+    },
+    "series-frequency-point-049": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-intel-pentium-d-840-2005-05-01"
+    },
+    "series-frequency-point-050": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-amd-athlon-64-fx-57-2005-06-01"
+    },
+    "series-frequency-point-051": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-sun-ultrasparc-t1-niagara-2005-07-01"
+    },
+    "series-frequency-point-052": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-amd-turion-64-x2-mt-40-lancaster-2005-08-01"
+    },
+    "series-frequency-point-053": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-intel-pentium-d-950-2006-06-01"
+    },
+    "series-frequency-point-054": {
+      "confidence": "high",
+      "note": "Curated second-pass match using source order and at least three corroborating neighboring metric fields.",
+      "processor_id": "cornell-amd-athlon-64-5000-brisbane-2006-06-01"
+    },
+    "series-frequency-point-056": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-intel-core-duo-t2700-2006-08-01"
+    },
+    "series-frequency-point-057": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.006.",
+      "processor_id": "cornell-intel-core-2-ex-qx6800-2007-04-01"
+    },
+    "series-frequency-point-058": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-ibm-power6-2007-05-01"
+    },
+    "series-frequency-point-059": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-ibm-cell-2007-05-05"
+    },
+    "series-frequency-point-060": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.011.",
+      "processor_id": "cornell-amd-turion-64-x2-tl-60-tyler-2007-06-01"
+    },
+    "series-frequency-point-061": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.012.",
+      "processor_id": "cornell-sun-ultrasparc-t2-niagara-2-2007-07-01"
+    },
+    "series-frequency-point-062": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.019.",
+      "processor_id": "cornell-amd-opteron-8350-2007-09-01"
+    },
+    "series-frequency-point-063": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.005.",
+      "processor_id": "cornell-amd-phenom-9600-2007-09-01"
+    },
+    "series-frequency-point-064": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.004.",
+      "processor_id": "cornell-intel-core-2-duo-e8400-2008-01-01"
+    },
+    "series-frequency-point-065": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.006.",
+      "processor_id": "cornell-amd-phenom-x3-8850-2008-10-01"
+    },
+    "series-frequency-point-066": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.011.",
+      "processor_id": "cornell-intel-core-i7-965-2008-11-01"
+    },
+    "series-frequency-point-067": {
+      "confidence": "high",
+      "note": "Curated second-pass match using source order and at least three corroborating neighboring metric fields.",
+      "processor_id": "cornell-intel-dunnington-x7460-2009-04-01"
+    },
+    "series-frequency-point-068": {
+      "confidence": "high",
+      "note": "Curated second-pass match using source order and at least three corroborating neighboring metric fields.",
+      "processor_id": "cornell-intel-i7-860-2009-09-01"
+    },
+    "series-frequency-point-069": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.011.",
+      "processor_id": "cornell-intel-gainestown-w5580-2009-04-01"
+    },
+    "series-frequency-point-070": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 3 corroborating fields (cores, frequency, transistors); mean log error 0.002.",
+      "processor_id": "cornell-sun-rock-2009-09-01"
+    },
+    "series-specint-point-001": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-mips-r3000-1988-06-01"
+    },
+    "series-specint-point-002": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-intel-486-dx-1989-04-01"
+    },
+    "series-specint-point-003": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-intel-486-dx-1990-05-01"
+    },
+    "series-specint-point-004": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-intel-486-dx2-1992-03-01"
+    },
+    "series-specint-point-005": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.012.",
+      "processor_id": "cornell-mips-r4000-1992-06-01"
+    },
+    "series-specint-point-006": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-sun-supersparc-1992-06-01"
+    },
+    "series-specint-point-007": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.005.",
+      "processor_id": "cornell-dec-alpha-21064-1992-10-01"
+    },
+    "series-specint-point-008": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.013.",
+      "processor_id": "cornell-intel-pentium-1993-03-01"
+    },
+    "series-specint-point-009": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-mips-r4600-1994-06-01"
+    },
+    "series-specint-point-010": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-dec-alpha-21064a-1994-06-01"
+    },
+    "series-specint-point-011": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.005.",
+      "processor_id": "cornell-dec-alpha-21164-1995-03-01"
+    },
+    "series-specint-point-012": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.004.",
+      "processor_id": "cornell-sun-supersparc-ii-1995-06-01"
+    },
+    "series-specint-point-013": {
+      "confidence": "high",
+      "note": "Curated second-pass match using source order and at least three corroborating neighboring metric fields.",
+      "processor_id": "cornell-sun-ultrasparc-i-1995-11-01"
+    },
+    "series-specint-point-014": {
+      "confidence": "high",
+      "note": "Curated second-pass match using source order and at least three corroborating neighboring metric fields.",
+      "processor_id": "cornell-intel-pentium-pro-1995-11-01"
+    },
+    "series-specint-point-015": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-mips-r5000-1996-01-01"
+    },
+    "series-specint-point-016": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-mips-r10000-1996-01-01"
+    },
+    "series-specint-point-017": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-dec-alpha-21164a-1996-07-01"
+    },
+    "series-specint-point-018": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-sun-ultrasparc-ii-1997-01-01"
+    },
+    "series-specint-point-019": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-dec-alpha-21164pc-1997-03-01"
+    },
+    "series-specint-point-020": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.003.",
+      "processor_id": "cornell-amd-k6-1997-04-01"
+    },
+    "series-specint-point-021": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-intel-pentium-ii-klamath-1997-05-01"
+    },
+    "series-specint-point-022": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.005.",
+      "processor_id": "cornell-dec-alpha-21264-1998-07-01"
+    },
+    "series-specint-point-023": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-mips-r12000-1998-11-01"
+    },
+    "series-specint-point-024": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.006.",
+      "processor_id": "cornell-amd-k6-2-1998-11-01"
+    },
+    "series-specint-point-025": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-intel-pentium-iii-katmai-1999-02-01"
+    },
+    "series-specint-point-026": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-amd-k6-iii-1999-02-01"
+    },
+    "series-specint-point-027": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.011.",
+      "processor_id": "cornell-amd-k7-1999-11-01"
+    },
+    "series-specint-point-029": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-sun-ultrasparc-iii-2000-09-01"
+    },
+    "series-specint-point-030": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-intel-pentium-4-willamette-2000-11-01"
+    },
+    "series-specint-point-031": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-intel-itanium-2001-05-01"
+    },
+    "series-specint-point-032": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.012.",
+      "processor_id": "cornell-amd-k6-2-2001-06-01"
+    },
+    "series-specint-point-033": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.011.",
+      "processor_id": "cornell-intel-pentium-4-northwood-2002-01-01"
+    },
+    "series-specint-point-034": {
+      "confidence": "high",
+      "note": "Curated second-pass match using source order and at least three corroborating neighboring metric fields.",
+      "processor_id": "cornell-amd-athlon-xp-tbred-2002-06-01"
+    },
+    "series-specint-point-035": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.002.",
+      "processor_id": "cornell-intel-itanium-2-2002-07-01"
+    },
+    "series-specint-point-036": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-dec-alpha-21364-2003-01-01"
+    },
+    "series-specint-point-037": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-amd-athlon-xp-barton-2003-02-01"
+    },
+    "series-specint-point-038": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.006.",
+      "processor_id": "cornell-amd-opteron-2003-04-01"
+    },
+    "series-specint-point-039": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.013.",
+      "processor_id": "cornell-intel-pentium-4-prescott-2004-06-01"
+    },
+    "series-specint-point-040": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-ibm-power5-2004-06-01"
+    },
+    "series-specint-point-041": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-amd-athlon-64-fx-55-2004-06-01"
+    },
+    "series-specint-point-042": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-intel-pentium-d-840-2005-05-01"
+    },
+    "series-specint-point-043": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-amd-athlon-64-fx-57-2005-06-01"
+    },
+    "series-specint-point-044": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-amd-athlon-64-5000-brisbane-2006-06-01"
+    },
+    "series-specint-point-045": {
+      "confidence": "high",
+      "note": "Curated second-pass match using source order and at least three corroborating neighboring metric fields.",
+      "processor_id": "cornell-amd-athlon-64-fx-62-windsor-2006-07-01"
+    },
+    "series-specint-point-046": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.006.",
+      "processor_id": "cornell-intel-core-2-duo-e6700-2006-07-01"
+    },
+    "series-specint-point-047": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-intel-core-duo-t2700-2006-08-01"
+    },
+    "series-specint-point-048": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-ibm-power6-2007-05-01"
+    },
+    "series-specint-point-049": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.011.",
+      "processor_id": "cornell-amd-turion-64-x2-tl-60-tyler-2007-06-01"
+    },
+    "series-specint-point-050": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.019.",
+      "processor_id": "cornell-amd-opteron-8350-2007-09-01"
+    },
+    "series-transistors-point-001": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.005.",
+      "processor_id": "cornell-intel-4004-1971-11-01"
+    },
+    "series-transistors-point-002": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-intel-8008-1972-04-01"
+    },
+    "series-transistors-point-003": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-intel-8080-1974-04-01"
+    },
+    "series-transistors-point-004": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.006.",
+      "processor_id": "cornell-intel-8088-1979-06-01"
+    },
+    "series-transistors-point-005": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-intel-286-1982-02-01"
+    },
+    "series-transistors-point-006": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-intel-386-dx-1985-10-01"
+    },
+    "series-transistors-point-007": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.005.",
+      "processor_id": "cornell-mips-r2000-1986-01-01"
+    },
+    "series-transistors-point-008": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-mips-r3000-1988-06-01"
+    },
+    "series-transistors-point-009": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-intel-486-dx-1989-04-01"
+    },
+    "series-transistors-point-010": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-intel-486-dx-1990-05-01"
+    },
+    "series-transistors-point-011": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-intel-486-dx2-1992-03-01"
+    },
+    "series-transistors-point-012": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-sun-supersparc-1992-06-01"
+    },
+    "series-transistors-point-013": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.012.",
+      "processor_id": "cornell-mips-r4000-1992-06-01"
+    },
+    "series-transistors-point-014": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.005.",
+      "processor_id": "cornell-dec-alpha-21064-1992-10-01"
+    },
+    "series-transistors-point-015": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.013.",
+      "processor_id": "cornell-intel-pentium-1993-03-01"
+    },
+    "series-transistors-point-016": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.006.",
+      "processor_id": "cornell-amd-am486-1993-03-01"
+    },
+    "series-transistors-point-017": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-mips-r4600-1994-06-01"
+    },
+    "series-transistors-point-018": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-dec-alpha-21064a-1994-06-01"
+    },
+    "series-transistors-point-019": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.005.",
+      "processor_id": "cornell-dec-alpha-21164-1995-03-01"
+    },
+    "series-transistors-point-020": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.004.",
+      "processor_id": "cornell-sun-supersparc-ii-1995-06-01"
+    },
+    "series-transistors-point-021": {
+      "confidence": "high",
+      "note": "Curated second-pass match using source order and at least three corroborating neighboring metric fields.",
+      "processor_id": "cornell-intel-pentium-pro-1995-11-01"
+    },
+    "series-transistors-point-022": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-mips-r10000-1996-01-01"
+    },
+    "series-transistors-point-023": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-mips-r5000-1996-01-01"
+    },
+    "series-transistors-point-024": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-amd-k5-1996-03-01"
+    },
+    "series-transistors-point-025": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-dec-alpha-21164a-1996-07-01"
+    },
+    "series-transistors-point-026": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-sun-ultrasparc-ii-1997-01-01"
+    },
+    "series-transistors-point-027": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-dec-alpha-21164pc-1997-03-01"
+    },
+    "series-transistors-point-028": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.003.",
+      "processor_id": "cornell-amd-k6-1997-04-01"
+    },
+    "series-transistors-point-029": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-intel-pentium-ii-klamath-1997-05-01"
+    },
+    "series-transistors-point-030": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.005.",
+      "processor_id": "cornell-dec-alpha-21264-1998-07-01"
+    },
+    "series-transistors-point-031": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.006.",
+      "processor_id": "cornell-amd-k6-2-1998-11-01"
+    },
+    "series-transistors-point-032": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-mips-r12000-1998-11-01"
+    },
+    "series-transistors-point-033": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-intel-pentium-iii-katmai-1999-02-01"
+    },
+    "series-transistors-point-034": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-amd-k6-iii-1999-02-01"
+    },
+    "series-transistors-point-035": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.011.",
+      "processor_id": "cornell-amd-k7-1999-11-01"
+    },
+    "series-transistors-point-036": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.005.",
+      "processor_id": "cornell-intel-pentium-iii-coppermine-2000-05-01"
+    },
+    "series-transistors-point-037": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.004.",
+      "processor_id": "cornell-amd-athlon-tbird-2000-05-01"
+    },
+    "series-transistors-point-038": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-sun-ultrasparc-iii-2000-09-01"
+    },
+    "series-transistors-point-039": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-intel-pentium-4-willamette-2000-11-01"
+    },
+    "series-transistors-point-040": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-intel-itanium-2001-05-01"
+    },
+    "series-transistors-point-041": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.012.",
+      "processor_id": "cornell-amd-k6-2-2001-06-01"
+    },
+    "series-transistors-point-042": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.011.",
+      "processor_id": "cornell-intel-pentium-4-northwood-2002-01-01"
+    },
+    "series-transistors-point-043": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-amd-athlon-xp-tbred-2002-06-01"
+    },
+    "series-transistors-point-044": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.002.",
+      "processor_id": "cornell-intel-itanium-2-2002-07-01"
+    },
+    "series-transistors-point-045": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-dec-alpha-21364-2003-01-01"
+    },
+    "series-transistors-point-046": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-amd-athlon-xp-barton-2003-02-01"
+    },
+    "series-transistors-point-047": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.006.",
+      "processor_id": "cornell-amd-opteron-2003-04-01"
+    },
+    "series-transistors-point-048": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.013.",
+      "processor_id": "cornell-intel-pentium-4-prescott-2004-06-01"
+    },
+    "series-transistors-point-049": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-amd-athlon-64-fx-55-2004-06-01"
+    },
+    "series-transistors-point-050": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-ibm-power5-2004-06-01"
+    },
+    "series-transistors-point-051": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-intel-pentium-d-840-2005-05-01"
+    },
+    "series-transistors-point-052": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-amd-athlon-64-fx-57-2005-06-01"
+    },
+    "series-transistors-point-053": {
+      "confidence": "high",
+      "note": "Curated second-pass match using source order and at least three corroborating neighboring metric fields.",
+      "processor_id": "cornell-sun-ultrasparc-t1-niagara-2005-07-01"
+    },
+    "series-transistors-point-054": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-amd-turion-64-x2-mt-40-lancaster-2005-08-01"
+    },
+    "series-transistors-point-055": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-intel-pentium-d-950-2006-06-01"
+    },
+    "series-transistors-point-056": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-amd-athlon-64-5000-brisbane-2006-06-01"
+    },
+    "series-transistors-point-057": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.014.",
+      "processor_id": "cornell-amd-athlon-64-fx-62-windsor-2006-07-01"
+    },
+    "series-transistors-point-058": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.024.",
+      "processor_id": "cornell-intel-core-2-ex-x6800-2006-07-01"
+    },
+    "series-transistors-point-059": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.006.",
+      "processor_id": "cornell-intel-core-2-duo-e6700-2006-07-01"
+    },
+    "series-transistors-point-060": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-intel-core-duo-t2700-2006-08-01"
+    },
+    "series-transistors-point-061": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.006.",
+      "processor_id": "cornell-intel-core-2-ex-qx6800-2007-04-01"
+    },
+    "series-transistors-point-062": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-ibm-cell-2007-05-05"
+    },
+    "series-transistors-point-063": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-ibm-power6-2007-05-01"
+    },
+    "series-transistors-point-064": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.011.",
+      "processor_id": "cornell-amd-turion-64-x2-tl-60-tyler-2007-06-01"
+    },
+    "series-transistors-point-065": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.012.",
+      "processor_id": "cornell-sun-ultrasparc-t2-niagara-2-2007-07-01"
+    },
+    "series-transistors-point-066": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.019.",
+      "processor_id": "cornell-amd-opteron-8350-2007-09-01"
+    },
+    "series-transistors-point-067": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.004.",
+      "processor_id": "cornell-intel-core-2-duo-e8400-2008-01-01"
+    },
+    "series-transistors-point-068": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.006.",
+      "processor_id": "cornell-amd-phenom-x3-8850-2008-10-01"
+    },
+    "series-transistors-point-069": {
+      "confidence": "high",
+      "note": "Curated second-pass match using source order and at least three corroborating neighboring metric fields.",
+      "processor_id": "cornell-intel-core-i7-965-2008-11-01"
+    },
+    "series-transistors-point-070": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.011.",
+      "processor_id": "cornell-intel-gainestown-w5580-2009-04-01"
+    },
+    "series-transistors-point-071": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-intel-dunnington-x7460-2009-04-01"
+    },
+    "series-transistors-point-072": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 3 corroborating fields (cores, frequency, transistors); mean log error 0.002.",
+      "processor_id": "cornell-sun-rock-2009-09-01"
+    },
+    "series-watts-point-001": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.005.",
+      "processor_id": "cornell-intel-4004-1971-11-01"
+    },
+    "series-watts-point-002": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-intel-8008-1972-04-01"
+    },
+    "series-watts-point-003": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-intel-8080-1974-04-01"
+    },
+    "series-watts-point-004": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.006.",
+      "processor_id": "cornell-intel-8088-1979-06-01"
+    },
+    "series-watts-point-005": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-intel-286-1982-02-01"
+    },
+    "series-watts-point-006": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-intel-386-dx-1985-10-01"
+    },
+    "series-watts-point-007": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.005.",
+      "processor_id": "cornell-mips-r2000-1986-01-01"
+    },
+    "series-watts-point-008": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-mips-r3000-1988-06-01"
+    },
+    "series-watts-point-009": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-intel-486-dx-1989-04-01"
+    },
+    "series-watts-point-010": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-intel-486-dx-1990-05-01"
+    },
+    "series-watts-point-011": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-intel-486-dx2-1992-03-01"
+    },
+    "series-watts-point-013": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.005.",
+      "processor_id": "cornell-dec-alpha-21064-1992-10-01"
+    },
+    "series-watts-point-014": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.006.",
+      "processor_id": "cornell-amd-am486-1993-03-01"
+    },
+    "series-watts-point-015": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.013.",
+      "processor_id": "cornell-intel-pentium-1993-03-01"
+    },
+    "series-watts-point-016": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-dec-alpha-21064a-1994-06-01"
+    },
+    "series-watts-point-017": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-mips-r4600-1994-06-01"
+    },
+    "series-watts-point-018": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.005.",
+      "processor_id": "cornell-dec-alpha-21164-1995-03-01"
+    },
+    "series-watts-point-019": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.004.",
+      "processor_id": "cornell-sun-supersparc-ii-1995-06-01"
+    },
+    "series-watts-point-020": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.011.",
+      "processor_id": "cornell-intel-pentium-pro-1995-11-01"
+    },
+    "series-watts-point-022": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-mips-r5000-1996-01-01"
+    },
+    "series-watts-point-023": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-amd-k5-1996-03-01"
+    },
+    "series-watts-point-024": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-dec-alpha-21164a-1996-07-01"
+    },
+    "series-watts-point-025": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-sun-ultrasparc-ii-1997-01-01"
+    },
+    "series-watts-point-026": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-dec-alpha-21164pc-1997-03-01"
+    },
+    "series-watts-point-027": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.003.",
+      "processor_id": "cornell-amd-k6-1997-04-01"
+    },
+    "series-watts-point-028": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-intel-pentium-ii-klamath-1997-05-01"
+    },
+    "series-watts-point-029": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.005.",
+      "processor_id": "cornell-dec-alpha-21264-1998-07-01"
+    },
+    "series-watts-point-030": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-mips-r12000-1998-11-01"
+    },
+    "series-watts-point-031": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.006.",
+      "processor_id": "cornell-amd-k6-2-1998-11-01"
+    },
+    "series-watts-point-032": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-amd-k6-iii-1999-02-01"
+    },
+    "series-watts-point-033": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-intel-pentium-iii-katmai-1999-02-01"
+    },
+    "series-watts-point-034": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.011.",
+      "processor_id": "cornell-amd-k7-1999-11-01"
+    },
+    "series-watts-point-035": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.004.",
+      "processor_id": "cornell-amd-athlon-tbird-2000-05-01"
+    },
+    "series-watts-point-036": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.005.",
+      "processor_id": "cornell-intel-pentium-iii-coppermine-2000-05-01"
+    },
+    "series-watts-point-037": {
+      "confidence": "high",
+      "note": "Curated second-pass match using source order and at least three corroborating neighboring metric fields.",
+      "processor_id": "cornell-sun-ultrasparc-iii-2000-09-01"
+    },
+    "series-watts-point-038": {
+      "confidence": "high",
+      "note": "Curated second-pass match using source order and at least three corroborating neighboring metric fields.",
+      "processor_id": "cornell-intel-pentium-4-willamette-2000-11-01"
+    },
+    "series-watts-point-039": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-intel-itanium-2001-05-01"
+    },
+    "series-watts-point-040": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.012.",
+      "processor_id": "cornell-amd-k6-2-2001-06-01"
+    },
+    "series-watts-point-041": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.011.",
+      "processor_id": "cornell-intel-pentium-4-northwood-2002-01-01"
+    },
+    "series-watts-point-042": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-amd-athlon-xp-tbred-2002-06-01"
+    },
+    "series-watts-point-043": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.002.",
+      "processor_id": "cornell-intel-itanium-2-2002-07-01"
+    },
+    "series-watts-point-044": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-dec-alpha-21364-2003-01-01"
+    },
+    "series-watts-point-045": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-amd-athlon-xp-barton-2003-02-01"
+    },
+    "series-watts-point-046": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.006.",
+      "processor_id": "cornell-amd-opteron-2003-04-01"
+    },
+    "series-watts-point-047": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-amd-athlon-64-fx-55-2004-06-01"
+    },
+    "series-watts-point-048": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.013.",
+      "processor_id": "cornell-intel-pentium-4-prescott-2004-06-01"
+    },
+    "series-watts-point-049": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-ibm-power5-2004-06-01"
+    },
+    "series-watts-point-050": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.007.",
+      "processor_id": "cornell-intel-pentium-d-840-2005-05-01"
+    },
+    "series-watts-point-051": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.009.",
+      "processor_id": "cornell-amd-athlon-64-fx-57-2005-06-01"
+    },
+    "series-watts-point-052": {
+      "confidence": "high",
+      "note": "Curated second-pass match using source order and at least three corroborating neighboring metric fields.",
+      "processor_id": "cornell-sun-ultrasparc-t1-niagara-2005-07-01"
+    },
+    "series-watts-point-053": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-amd-turion-64-x2-mt-40-lancaster-2005-08-01"
+    },
+    "series-watts-point-054": {
+      "confidence": "high",
+      "note": "Curated second-pass match using source order and at least three corroborating neighboring metric fields.",
+      "processor_id": "cornell-intel-pentium-d-950-2006-06-01"
+    },
+    "series-watts-point-056": {
+      "confidence": "high",
+      "note": "Curated second-pass match using source order and at least three corroborating neighboring metric fields.",
+      "processor_id": "cornell-amd-athlon-64-fx-62-windsor-2006-07-01"
+    },
+    "series-watts-point-057": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.024.",
+      "processor_id": "cornell-intel-core-2-ex-x6800-2006-07-01"
+    },
+    "series-watts-point-058": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.008.",
+      "processor_id": "cornell-intel-core-duo-t2700-2006-08-01"
+    },
+    "series-watts-point-059": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.006.",
+      "processor_id": "cornell-intel-core-2-ex-qx6800-2007-04-01"
+    },
+    "series-watts-point-060": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.010.",
+      "processor_id": "cornell-ibm-power6-2007-05-01"
+    },
+    "series-watts-point-061": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.011.",
+      "processor_id": "cornell-amd-turion-64-x2-tl-60-tyler-2007-06-01"
+    },
+    "series-watts-point-062": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.012.",
+      "processor_id": "cornell-sun-ultrasparc-t2-niagara-2-2007-07-01"
+    },
+    "series-watts-point-063": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 5 corroborating fields (cores, frequency, specint, transistors, watts); mean log error 0.019.",
+      "processor_id": "cornell-amd-opteron-8350-2007-09-01"
+    },
+    "series-watts-point-064": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.005.",
+      "processor_id": "cornell-amd-phenom-9600-2007-09-01"
+    },
+    "series-watts-point-065": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.004.",
+      "processor_id": "cornell-intel-core-2-duo-e8400-2008-01-01"
+    },
+    "series-watts-point-066": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.006.",
+      "processor_id": "cornell-amd-phenom-x3-8850-2008-10-01"
+    },
+    "series-watts-point-067": {
+      "confidence": "high",
+      "note": "Second-pass vector match using 4 corroborating fields (cores, frequency, transistors, watts); mean log error 0.011.",
+      "processor_id": "cornell-intel-core-i7-965-2008-11-01"
+    }
+  },
+  "legacy_processors": [
+    {
+      "frequency_ghz": "0.0007",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-4004-1971-11-01",
+      "processor_name": "4004",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L3",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "11",
+      "release_year": "1971",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "0.7",
+        "specint": "0.000012",
+        "transistors": "0.0023",
+        "watts": "0.45"
+      },
+      "transistors_billion": "0.0000023",
+      "typical_power_tdp_watts": "0.45"
+    },
+    {
+      "frequency_ghz": "0.0005",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-8008-1972-04-01",
+      "processor_name": "8008",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L4",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "04",
+      "release_year": "1972",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "0.5",
+        "specint": "0.000012",
+        "transistors": "0.0035",
+        "watts": "0.42"
+      },
+      "transistors_billion": "0.0000035",
+      "typical_power_tdp_watts": "0.42"
+    },
+    {
+      "frequency_ghz": "0.002",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-8080-1974-04-01",
+      "processor_name": "8080",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L5",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "04",
+      "release_year": "1974",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "2",
+        "specint": "0.000149",
+        "transistors": "0.006",
+        "watts": "0.92"
+      },
+      "transistors_billion": "0.000006",
+      "typical_power_tdp_watts": "0.92"
+    },
+    {
+      "frequency_ghz": "0.005",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-8088-1979-06-01",
+      "processor_name": "8088",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L6",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "06",
+      "release_year": "1979",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "5",
+        "specint": "0.000212",
+        "transistors": "0.029",
+        "watts": "1.7"
+      },
+      "transistors_billion": "0.000029",
+      "typical_power_tdp_watts": "1.7"
+    },
+    {
+      "frequency_ghz": "0.006",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-286-1982-02-01",
+      "processor_name": "286",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L7",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "02",
+      "release_year": "1982",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "6",
+        "specint": "0.00056",
+        "transistors": "0.134",
+        "watts": "3"
+      },
+      "transistors_billion": "0.000134",
+      "typical_power_tdp_watts": "3"
+    },
+    {
+      "frequency_ghz": "0.016",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-386-dx-1985-10-01",
+      "processor_name": "386 DX",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L8",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "10",
+      "release_year": "1985",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "16",
+        "specint": "0.006851",
+        "transistors": "0.275",
+        "watts": "1.5"
+      },
+      "transistors_billion": "0.000275",
+      "typical_power_tdp_watts": "1.5"
+    },
+    {
+      "frequency_ghz": "0.016",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Mips",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-mips-r2000-1986-01-01",
+      "processor_name": "R2000",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L9",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "01",
+      "release_year": "1986",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "16",
+        "specint": "",
+        "transistors": "0.11",
+        "watts": "3"
+      },
+      "transistors_billion": "0.00011",
+      "typical_power_tdp_watts": "3"
+    },
+    {
+      "frequency_ghz": "0.04",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Mips",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-mips-r3000-1988-06-01",
+      "processor_name": "R3000",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L10",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "06",
+      "release_year": "1988",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "40",
+        "specint": "0.046875",
+        "transistors": "0.12",
+        "watts": "4"
+      },
+      "transistors_billion": "0.00011999999999999999",
+      "typical_power_tdp_watts": "4"
+    },
+    {
+      "frequency_ghz": "0.025",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-486-dx-1989-04-01",
+      "processor_name": "486 DX",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L11",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "04",
+      "release_year": "1989",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "25",
+        "specint": "0.028226",
+        "transistors": "1.2",
+        "watts": "2.75"
+      },
+      "transistors_billion": "0.0012",
+      "typical_power_tdp_watts": "2.75"
+    },
+    {
+      "frequency_ghz": "0.033",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-486-dx-1990-05-01",
+      "processor_name": "486 DX",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L12",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "05",
+      "release_year": "1990",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "33",
+        "specint": "0.03125",
+        "transistors": "1.2",
+        "watts": "3.5"
+      },
+      "transistors_billion": "0.0012",
+      "typical_power_tdp_watts": "3.5"
+    },
+    {
+      "frequency_ghz": "0.066",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-486-dx2-1992-03-01",
+      "processor_name": "486 DX2",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L13",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "03",
+      "release_year": "1992",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "66",
+        "specint": "0.050235",
+        "transistors": "1.2",
+        "watts": "5.8"
+      },
+      "transistors_billion": "0.0012",
+      "typical_power_tdp_watts": "5.8"
+    },
+    {
+      "frequency_ghz": "0.1",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Mips",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-mips-r4000-1992-06-01",
+      "processor_name": "R4000",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L14",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "06",
+      "release_year": "1992",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "100",
+        "specint": "0.099126",
+        "transistors": "1.1",
+        "watts": "15"
+      },
+      "transistors_billion": "0.0011",
+      "typical_power_tdp_watts": "15"
+    },
+    {
+      "frequency_ghz": "0.06",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Sun",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-sun-supersparc-1992-06-01",
+      "processor_name": "SuperSparc",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L15",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "06",
+      "release_year": "1992",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "60",
+        "specint": "0.149529",
+        "transistors": "3.1",
+        "watts": "14.2"
+      },
+      "transistors_billion": "0.0031",
+      "typical_power_tdp_watts": "14.2"
+    },
+    {
+      "frequency_ghz": "0.2",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "DEC",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-dec-alpha-21064-1992-10-01",
+      "processor_name": "Alpha 21064",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L16",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "10",
+      "release_year": "1992",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "200",
+        "specint": "0.178931",
+        "transistors": "1.7",
+        "watts": "35"
+      },
+      "transistors_billion": "0.0017",
+      "typical_power_tdp_watts": "35"
+    },
+    {
+      "frequency_ghz": "0.04",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "AMD",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-amd-am486-1993-03-01",
+      "processor_name": "Am486",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L17",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "03",
+      "release_year": "1993",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "40",
+        "specint": "",
+        "transistors": "0.93",
+        "watts": "3"
+      },
+      "transistors_billion": "0.00093",
+      "typical_power_tdp_watts": "3"
+    },
+    {
+      "frequency_ghz": "0.066",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-pentium-1993-03-01",
+      "processor_name": "Pentium",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L18",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "03",
+      "release_year": "1993",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "66",
+        "specint": "0.13088",
+        "transistors": "3.1",
+        "watts": "13"
+      },
+      "transistors_billion": "0.0031",
+      "typical_power_tdp_watts": "13"
+    },
+    {
+      "frequency_ghz": "0.15",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Mips",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-mips-r4600-1994-06-01",
+      "processor_name": "R4600",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L19",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "06",
+      "release_year": "1994",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "150",
+        "specint": "0.191532",
+        "transistors": "1.9",
+        "watts": "3"
+      },
+      "transistors_billion": "0.0019",
+      "typical_power_tdp_watts": "3"
+    },
+    {
+      "frequency_ghz": "0.3",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "DEC",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-dec-alpha-21064a-1994-06-01",
+      "processor_name": "Alpha 21064A",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L20",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "06",
+      "release_year": "1994",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "300",
+        "specint": "0.338541",
+        "transistors": "2.8",
+        "watts": "28"
+      },
+      "transistors_billion": "0.0028",
+      "typical_power_tdp_watts": "28"
+    },
+    {
+      "frequency_ghz": "0.3",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "DEC",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-dec-alpha-21164-1995-03-01",
+      "processor_name": "Alpha 21164",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L21",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "03",
+      "release_year": "1995",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "300",
+        "specint": "0.578272",
+        "transistors": "9.67",
+        "watts": "50"
+      },
+      "transistors_billion": "0.00967",
+      "typical_power_tdp_watts": "50"
+    },
+    {
+      "frequency_ghz": "0.09",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Sun",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-sun-supersparc-ii-1995-06-01",
+      "processor_name": "SuperSparc II",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L22",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "06",
+      "release_year": "1995",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "90",
+        "specint": "0.226814",
+        "transistors": "3.1",
+        "watts": "16"
+      },
+      "transistors_billion": "0.0031",
+      "typical_power_tdp_watts": "16"
+    },
+    {
+      "frequency_ghz": "0.2",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Sun",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-sun-ultrasparc-i-1995-11-01",
+      "processor_name": "UltraSparc I",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L23",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "11",
+      "release_year": "1995",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "200",
+        "specint": "0.53065",
+        "transistors": "5.2",
+        "watts": "30"
+      },
+      "transistors_billion": "0.0052",
+      "typical_power_tdp_watts": "30"
+    },
+    {
+      "frequency_ghz": "0.2",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-pentium-pro-1995-11-01",
+      "processor_name": "Pentium Pro",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L24",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "11",
+      "release_year": "1995",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "200",
+        "specint": "0.551059",
+        "transistors": "5.5",
+        "watts": "32.6"
+      },
+      "transistors_billion": "0.0055",
+      "typical_power_tdp_watts": "32.6"
+    },
+    {
+      "frequency_ghz": "0.2",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Mips",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-mips-r5000-1996-01-01",
+      "processor_name": "R5000",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L25",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "01",
+      "release_year": "1996",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "200",
+        "specint": "0.374176",
+        "transistors": "3.6",
+        "watts": "10"
+      },
+      "transistors_billion": "0.0036",
+      "typical_power_tdp_watts": "10"
+    },
+    {
+      "frequency_ghz": "0.2",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Mips",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-mips-r10000-1996-01-01",
+      "processor_name": "R10000",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L26",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "01",
+      "release_year": "1996",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "200",
+        "specint": "0.775565",
+        "transistors": "6.8",
+        "watts": "30"
+      },
+      "transistors_billion": "0.0068",
+      "typical_power_tdp_watts": "30"
+    },
+    {
+      "frequency_ghz": "0.09",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "AMD",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-amd-k5-1996-03-01",
+      "processor_name": "K5",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L27",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "03",
+      "release_year": "1996",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "90",
+        "specint": "",
+        "transistors": "4.3",
+        "watts": "11"
+      },
+      "transistors_billion": "0.0043",
+      "typical_power_tdp_watts": "11"
+    },
+    {
+      "frequency_ghz": "0.5",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "DEC",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-dec-alpha-21164a-1996-07-01",
+      "processor_name": "Alpha 21164A",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L28",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "07",
+      "release_year": "1996",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "500",
+        "specint": "1.02048",
+        "transistors": "9.67",
+        "watts": "43"
+      },
+      "transistors_billion": "0.00967",
+      "typical_power_tdp_watts": "43"
+    },
+    {
+      "frequency_ghz": "0.25",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Sun",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-sun-ultrasparc-ii-1997-01-01",
+      "processor_name": "UltraSparc II",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L29",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "01",
+      "release_year": "1997",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "250",
+        "specint": "0.707533",
+        "transistors": "5.4",
+        "watts": "25"
+      },
+      "transistors_billion": "0.0054",
+      "typical_power_tdp_watts": "25"
+    },
+    {
+      "frequency_ghz": "0.533",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "DEC",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-dec-alpha-21164pc-1997-03-01",
+      "processor_name": "Alpha 21164PC",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L30",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "03",
+      "release_year": "1997",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "533",
+        "specint": "0.972858",
+        "transistors": "3.5",
+        "watts": "36"
+      },
+      "transistors_billion": "0.0035",
+      "typical_power_tdp_watts": "36"
+    },
+    {
+      "frequency_ghz": "0.233",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "AMD",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-amd-k6-1997-04-01",
+      "processor_name": "K6",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L31",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "04",
+      "release_year": "1997",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "233",
+        "specint": "0.462618",
+        "transistors": "8.8",
+        "watts": "17"
+      },
+      "transistors_billion": "0.0088",
+      "typical_power_tdp_watts": "17"
+    },
+    {
+      "frequency_ghz": "0.3",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-pentium-ii-klamath-1997-05-01",
+      "processor_name": "Pentium II (klamath)",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L32",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "05",
+      "release_year": "1997",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "300",
+        "specint": "0.795974",
+        "transistors": "7.5",
+        "watts": "32"
+      },
+      "transistors_billion": "0.0075",
+      "typical_power_tdp_watts": "32"
+    },
+    {
+      "frequency_ghz": "0.5",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "DEC",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-dec-alpha-21264-1998-07-01",
+      "processor_name": "Alpha 21264",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L33",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "07",
+      "release_year": "1998",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "500",
+        "specint": "1.9904",
+        "transistors": "15.2",
+        "watts": "91"
+      },
+      "transistors_billion": "0.0152",
+      "typical_power_tdp_watts": "91"
+    },
+    {
+      "frequency_ghz": "0.3",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Mips",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-mips-r12000-1998-11-01",
+      "processor_name": "R12000",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L34",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "11",
+      "release_year": "1998",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "300",
+        "specint": "1.251789",
+        "transistors": "6.9",
+        "watts": "30"
+      },
+      "transistors_billion": "0.006900000000000001",
+      "typical_power_tdp_watts": "30"
+    },
+    {
+      "frequency_ghz": "0.4",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "AMD",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-amd-k6-2-1998-11-01",
+      "processor_name": "K6-2",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L35",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "11",
+      "release_year": "1998",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "400",
+        "specint": "0.646304",
+        "transistors": "9.3",
+        "watts": "14"
+      },
+      "transistors_billion": "0.009300000000000001",
+      "typical_power_tdp_watts": "14"
+    },
+    {
+      "frequency_ghz": "0.5",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-pentium-iii-katmai-1999-02-01",
+      "processor_name": "Pentium III (katmai)",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L36",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "02",
+      "release_year": "1999",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "500",
+        "specint": "1.4912",
+        "transistors": "9.5",
+        "watts": "21"
+      },
+      "transistors_billion": "0.0095",
+      "typical_power_tdp_watts": "21"
+    },
+    {
+      "frequency_ghz": "0.45",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "AMD",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-amd-k6-iii-1999-02-01",
+      "processor_name": "K6-III",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L37",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "02",
+      "release_year": "1999",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "450",
+        "specint": "1.04089",
+        "transistors": "21.3",
+        "watts": "17"
+      },
+      "transistors_billion": "0.0213",
+      "typical_power_tdp_watts": "17"
+    },
+    {
+      "frequency_ghz": "0.75",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "AMD",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-amd-k7-1999-11-01",
+      "processor_name": "K7",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L38",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "11",
+      "release_year": "1999",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "750",
+        "specint": "1.87088",
+        "transistors": "22",
+        "watts": "35"
+      },
+      "transistors_billion": "0.022",
+      "typical_power_tdp_watts": "35"
+    },
+    {
+      "frequency_ghz": "1",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-pentium-iii-coppermine-2000-05-01",
+      "processor_name": "Pentium III (coppermine)",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L39",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "05",
+      "release_year": "2000",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "1000",
+        "specint": "2.624",
+        "transistors": "28",
+        "watts": "20"
+      },
+      "transistors_billion": "0.028",
+      "typical_power_tdp_watts": "20"
+    },
+    {
+      "frequency_ghz": "1",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "AMD",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-amd-athlon-tbird-2000-05-01",
+      "processor_name": "Athlon Tbird",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L40",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "05",
+      "release_year": "2000",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "1000",
+        "specint": "2.6752",
+        "transistors": "37",
+        "watts": "49"
+      },
+      "transistors_billion": "0.037",
+      "typical_power_tdp_watts": "49"
+    },
+    {
+      "frequency_ghz": "0.9",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Sun",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-sun-ultrasparc-iii-2000-09-01",
+      "processor_name": "UltraSparc III",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L41",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "09",
+      "release_year": "2000",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "900",
+        "specint": "2.9888",
+        "transistors": "29",
+        "watts": "70"
+      },
+      "transistors_billion": "0.029",
+      "typical_power_tdp_watts": "70"
+    },
+    {
+      "frequency_ghz": "2",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-pentium-4-willamette-2000-11-01",
+      "processor_name": "Pentium 4 (willamette)",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L42",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "11",
+      "release_year": "2000",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "2000",
+        "specint": "3.4304",
+        "transistors": "42",
+        "watts": "72"
+      },
+      "transistors_billion": "0.042",
+      "typical_power_tdp_watts": "72"
+    },
+    {
+      "frequency_ghz": "0.8",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-itanium-2001-05-01",
+      "processor_name": "Itanium",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L43",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "05",
+      "release_year": "2001",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "800",
+        "specint": "2.368",
+        "transistors": "25",
+        "watts": "98"
+      },
+      "transistors_billion": "0.025",
+      "typical_power_tdp_watts": "98"
+    },
+    {
+      "frequency_ghz": "1.4",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "AMD",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-amd-k6-2-2001-06-01",
+      "processor_name": "K6-2",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L44",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "06",
+      "release_year": "2001",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "1400",
+        "specint": "3.5456",
+        "transistors": "37",
+        "watts": "56"
+      },
+      "transistors_billion": "0.037",
+      "typical_power_tdp_watts": "56"
+    },
+    {
+      "frequency_ghz": "2.2",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-pentium-4-northwood-2002-01-01",
+      "processor_name": "Pentium 4 (northwood)",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L45",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "01",
+      "release_year": "2002",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "2200",
+        "specint": "5.1904",
+        "transistors": "55",
+        "watts": "48"
+      },
+      "transistors_billion": "0.055",
+      "typical_power_tdp_watts": "48"
+    },
+    {
+      "frequency_ghz": "1.8",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "AMD",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-amd-athlon-xp-tbred-2002-06-01",
+      "processor_name": "Athlon XP Tbred",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L46",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "06",
+      "release_year": "2002",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "1800",
+        "specint": "4.7232",
+        "transistors": "37.2",
+        "watts": "62"
+      },
+      "transistors_billion": "0.037200000000000004",
+      "typical_power_tdp_watts": "62"
+    },
+    {
+      "frequency_ghz": "1",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-itanium-2-2002-07-01",
+      "processor_name": "Itanium 2",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L47",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "07",
+      "release_year": "2002",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "1000",
+        "specint": "5.184",
+        "transistors": "221",
+        "watts": "98"
+      },
+      "transistors_billion": "0.221",
+      "typical_power_tdp_watts": "98"
+    },
+    {
+      "frequency_ghz": "1.15",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "DEC",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-dec-alpha-21364-2003-01-01",
+      "processor_name": "Alpha 21364",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L48",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "01",
+      "release_year": "2003",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "1150",
+        "specint": "5.6128",
+        "transistors": "152",
+        "watts": "155"
+      },
+      "transistors_billion": "0.152",
+      "typical_power_tdp_watts": "155"
+    },
+    {
+      "frequency_ghz": "2.16",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "AMD",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-amd-athlon-xp-barton-2003-02-01",
+      "processor_name": "Athlon XP Barton",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L49",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "02",
+      "release_year": "2003",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "2160",
+        "specint": "6.368",
+        "transistors": "54.3",
+        "watts": "74"
+      },
+      "transistors_billion": "0.054299999999999994",
+      "typical_power_tdp_watts": "74"
+    },
+    {
+      "frequency_ghz": "1.8",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "AMD",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-amd-opteron-2003-04-01",
+      "processor_name": "Opteron",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L50",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "04",
+      "release_year": "2003",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "1800",
+        "specint": "7.488",
+        "transistors": "106",
+        "watts": "89"
+      },
+      "transistors_billion": "0.106",
+      "typical_power_tdp_watts": "89"
+    },
+    {
+      "frequency_ghz": "2.6",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "AMD",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-amd-athlon-64-fx-55-2004-06-01",
+      "processor_name": "Athlon 64 FX-55",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L51",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "06",
+      "release_year": "2004",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "2600",
+        "specint": "11.8656",
+        "transistors": "106",
+        "watts": "89"
+      },
+      "transistors_billion": "0.106",
+      "typical_power_tdp_watts": "89"
+    },
+    {
+      "frequency_ghz": "3.6",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-pentium-4-prescott-2004-06-01",
+      "processor_name": "Pentium 4 (prescott)",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L52",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "06",
+      "release_year": "2004",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "3600",
+        "specint": "10.08",
+        "transistors": "125",
+        "watts": "115"
+      },
+      "transistors_billion": "0.125",
+      "typical_power_tdp_watts": "115"
+    },
+    {
+      "frequency_ghz": "1.9",
+      "logical_threads_or_compute_units": "2",
+      "manufacturer": "IBM",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-ibm-power5-2004-06-01",
+      "processor_name": "Power5",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L53",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "06",
+      "release_year": "2004",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "2",
+        "frequency": "1900",
+        "specint": "8.9472",
+        "transistors": "276",
+        "watts": "100"
+      },
+      "transistors_billion": "0.276",
+      "typical_power_tdp_watts": "100"
+    },
+    {
+      "frequency_ghz": "3.2",
+      "logical_threads_or_compute_units": "2",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-pentium-d-840-2005-05-01",
+      "processor_name": "Pentium D (840)",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L54",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "05",
+      "release_year": "2005",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "2",
+        "frequency": "3200",
+        "specint": "9.5104",
+        "transistors": "230",
+        "watts": "130"
+      },
+      "transistors_billion": "0.23",
+      "typical_power_tdp_watts": "130"
+    },
+    {
+      "frequency_ghz": "2.8",
+      "logical_threads_or_compute_units": "1",
+      "manufacturer": "AMD",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-amd-athlon-64-fx-57-2005-06-01",
+      "processor_name": "Athlon 64 FX-57",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L55",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "06",
+      "release_year": "2005",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "1",
+        "frequency": "2800",
+        "specint": "11.9168",
+        "transistors": "114",
+        "watts": "85"
+      },
+      "transistors_billion": "0.114",
+      "typical_power_tdp_watts": "85"
+    },
+    {
+      "frequency_ghz": "1.2",
+      "logical_threads_or_compute_units": "8",
+      "manufacturer": "Sun",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-sun-ultrasparc-t1-niagara-2005-07-01",
+      "processor_name": "UltraSparc T1 (Niagara)",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L56",
+        "https://github.com/cornell-brg/processor-trends",
+        "https://www.oracle.com/docs/tech/2008-oct-opensparc-slide-cast-04-ds.pdf",
+        "https://www.oracle.com/servers/technologies/opensparc-t1-page.html"
+      ],
+      "release_month": "07",
+      "release_year": "2005",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "8",
+        "frequency": "1200",
+        "specint": "",
+        "transistors": "300",
+        "watts": "72"
+      },
+      "transistors_billion": "0.3",
+      "typical_power_tdp_watts": "72"
+    },
+    {
+      "frequency_ghz": "2.2",
+      "logical_threads_or_compute_units": "2",
+      "manufacturer": "AMD",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-amd-turion-64-x2-mt-40-lancaster-2005-08-01",
+      "processor_name": "Turion 64 X2 MT-40 (Lancaster)",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L57",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "08",
+      "release_year": "2005",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "2",
+        "frequency": "2200",
+        "specint": "",
+        "transistors": "114",
+        "watts": "25"
+      },
+      "transistors_billion": "0.114",
+      "typical_power_tdp_watts": "25"
+    },
+    {
+      "frequency_ghz": "2.6",
+      "logical_threads_or_compute_units": "2",
+      "manufacturer": "AMD",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-amd-athlon-64-5000-brisbane-2006-06-01",
+      "processor_name": "Athlon 64 5000+ (Brisbane)",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L58",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "06",
+      "release_year": "2006",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "2",
+        "frequency": "2600",
+        "specint": "10.4",
+        "transistors": "154",
+        "watts": "65"
+      },
+      "transistors_billion": "0.154",
+      "typical_power_tdp_watts": "65"
+    },
+    {
+      "frequency_ghz": "3.6",
+      "logical_threads_or_compute_units": "2",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-pentium-d-950-2006-06-01",
+      "processor_name": "Pentium D (950)",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L59",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "06",
+      "release_year": "2006",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "2",
+        "frequency": "3600",
+        "specint": "11.6096",
+        "transistors": "376",
+        "watts": "130"
+      },
+      "transistors_billion": "0.376",
+      "typical_power_tdp_watts": "130"
+    },
+    {
+      "frequency_ghz": "2.8",
+      "logical_threads_or_compute_units": "2",
+      "manufacturer": "AMD",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-amd-athlon-64-fx-62-windsor-2006-07-01",
+      "processor_name": "Athlon 64 FX-62 (Windsor)",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L60",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "07",
+      "release_year": "2006",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "2",
+        "frequency": "2800",
+        "specint": "11.4",
+        "transistors": "243",
+        "watts": "125"
+      },
+      "transistors_billion": "0.243",
+      "typical_power_tdp_watts": "125"
+    },
+    {
+      "frequency_ghz": "2.8",
+      "logical_threads_or_compute_units": "2",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-core-2-ex-x6800-2006-07-01",
+      "processor_name": "Core 2 Ex (X6800)",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L61",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "07",
+      "release_year": "2006",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "2",
+        "frequency": "2800",
+        "specint": "21",
+        "transistors": "291",
+        "watts": "75"
+      },
+      "transistors_billion": "0.291",
+      "typical_power_tdp_watts": "75"
+    },
+    {
+      "frequency_ghz": "2.66",
+      "logical_threads_or_compute_units": "2",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-core-2-duo-e6700-2006-07-01",
+      "processor_name": "Core 2 Duo (E6700)",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L62",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "07",
+      "release_year": "2006",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "2",
+        "frequency": "2660",
+        "specint": "19.8",
+        "transistors": "582",
+        "watts": "65"
+      },
+      "transistors_billion": "0.582",
+      "typical_power_tdp_watts": "65"
+    },
+    {
+      "frequency_ghz": "2.33",
+      "logical_threads_or_compute_units": "2",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-core-duo-t2700-2006-08-01",
+      "processor_name": "Core Duo (T2700)",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L63",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "08",
+      "release_year": "2006",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "2",
+        "frequency": "2330",
+        "specint": "13.1",
+        "transistors": "152",
+        "watts": "31"
+      },
+      "transistors_billion": "0.152",
+      "typical_power_tdp_watts": "31"
+    },
+    {
+      "frequency_ghz": "2.93",
+      "logical_threads_or_compute_units": "4",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-core-2-ex-qx6800-2007-04-01",
+      "processor_name": "Core 2 Ex (QX6800)",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L64",
+        "https://github.com/cornell-brg/processor-trends",
+        "https://www.intel.com/pressroom/archive/releases/2007/20070409comp.htm",
+        "https://www.intel.com/pressroom/kits/quickreffam.htm"
+      ],
+      "release_month": "04",
+      "release_year": "2007",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "4",
+        "frequency": "2930",
+        "specint": "22.1",
+        "transistors": "582",
+        "watts": "130"
+      },
+      "transistors_billion": "0.582",
+      "typical_power_tdp_watts": "130"
+    },
+    {
+      "frequency_ghz": "4",
+      "logical_threads_or_compute_units": "9",
+      "manufacturer": "IBM",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-ibm-cell-2007-05-05",
+      "processor_name": "Cell",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L65",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "05",
+      "release_year": "2007",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "9",
+        "frequency": "4000",
+        "specint": "",
+        "transistors": "234",
+        "watts": "100"
+      },
+      "transistors_billion": "0.234",
+      "typical_power_tdp_watts": "100"
+    },
+    {
+      "frequency_ghz": "4.7",
+      "logical_threads_or_compute_units": "2",
+      "manufacturer": "IBM",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-ibm-power6-2007-05-01",
+      "processor_name": "Power6",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L66",
+        "https://github.com/cornell-brg/processor-trends",
+        "https://research.ibm.com/publications/ibm-power6-microprocessor-physical-design-and-design-methodology",
+        "https://public.dhe.ibm.com/solutions/DFO_IBM_Presentation/DFO-IBM-Power6.pdf"
+      ],
+      "release_month": "05",
+      "release_year": "2007",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "2",
+        "frequency": "4700",
+        "specint": "17.8",
+        "transistors": "790",
+        "watts": "100"
+      },
+      "transistors_billion": "0.79",
+      "typical_power_tdp_watts": "100"
+    },
+    {
+      "frequency_ghz": "2",
+      "logical_threads_or_compute_units": "2",
+      "manufacturer": "AMD",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-amd-turion-64-x2-tl-60-tyler-2007-06-01",
+      "processor_name": "Turion 64 X2 TL-60 (Tyler)",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L67",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "06",
+      "release_year": "2007",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "2",
+        "frequency": "2000",
+        "specint": "7.7",
+        "transistors": "114",
+        "watts": "31"
+      },
+      "transistors_billion": "0.114",
+      "typical_power_tdp_watts": "31"
+    },
+    {
+      "frequency_ghz": "1.4",
+      "logical_threads_or_compute_units": "8",
+      "manufacturer": "Sun",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-sun-ultrasparc-t2-niagara-2-2007-07-01",
+      "processor_name": "UltraSparc T2 (Niagara 2)",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L68",
+        "https://github.com/cornell-brg/processor-trends",
+        "https://www.oracle.com/docs/tech/systems/02-t2-a-sscc2007.pdf",
+        "https://www.oracle.com/servers/technologies/opensparc-t2-page.html"
+      ],
+      "release_month": "07",
+      "release_year": "2007",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "8",
+        "frequency": "1400",
+        "specint": "",
+        "transistors": "503",
+        "watts": "84"
+      },
+      "transistors_billion": "0.503",
+      "typical_power_tdp_watts": "84"
+    },
+    {
+      "frequency_ghz": "2.3",
+      "logical_threads_or_compute_units": "4",
+      "manufacturer": "AMD",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-amd-phenom-9600-2007-09-01",
+      "processor_name": "Phenom 9600",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L69",
+        "https://github.com/cornell-brg/processor-trends",
+        "https://ir.amd.com/news-events/press-releases/detail/272/amd-introduces-worlds-first-comprehensive-cutting-edge-pc-platform"
+      ],
+      "release_month": "09",
+      "release_year": "2007",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "4",
+        "frequency": "2300",
+        "specint": "",
+        "transistors": "450",
+        "watts": "95"
+      },
+      "transistors_billion": "0.45",
+      "typical_power_tdp_watts": "95"
+    },
+    {
+      "frequency_ghz": "2",
+      "logical_threads_or_compute_units": "4",
+      "manufacturer": "AMD",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-amd-opteron-8350-2007-09-01",
+      "processor_name": "Opteron 8350",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L70",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "09",
+      "release_year": "2007",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "4",
+        "frequency": "2000",
+        "specint": "11.2",
+        "transistors": "463",
+        "watts": "75"
+      },
+      "transistors_billion": "0.463",
+      "typical_power_tdp_watts": "75"
+    },
+    {
+      "frequency_ghz": "3",
+      "logical_threads_or_compute_units": "2",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-core-2-duo-e8400-2008-01-01",
+      "processor_name": "Core 2 Duo (E8400)",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L71",
+        "https://github.com/cornell-brg/processor-trends",
+        "https://www.intel.com/pressroom/kits/quickreffam.htm",
+        "https://www.intel.com/content/www/us/en/content-details/841070/intel-core-2-duo-processor-e8000-and-e7000-series-and-intel-pentium-dual-core-processor-e5000-series-thermal-and-mechanical-design-guidelines.html"
+      ],
+      "release_month": "01",
+      "release_year": "2008",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "2",
+        "frequency": "3000",
+        "specint": "23.5",
+        "transistors": "410",
+        "watts": "65"
+      },
+      "transistors_billion": "0.41",
+      "typical_power_tdp_watts": "65"
+    },
+    {
+      "frequency_ghz": "2.5",
+      "logical_threads_or_compute_units": "3",
+      "manufacturer": "AMD",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-amd-phenom-x3-8850-2008-10-01",
+      "processor_name": "Phenom X3 8850",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L72",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "10",
+      "release_year": "2008",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "3",
+        "frequency": "2500",
+        "specint": "",
+        "transistors": "450",
+        "watts": "95"
+      },
+      "transistors_billion": "0.45",
+      "typical_power_tdp_watts": "95"
+    },
+    {
+      "frequency_ghz": "3.2",
+      "logical_threads_or_compute_units": "4",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-core-i7-965-2008-11-01",
+      "processor_name": "Core i7-965",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L73",
+        "https://github.com/cornell-brg/processor-trends",
+        "https://www.intel.com/pressroom/archive/releases/2008/20081117comp_sm.htm",
+        "https://www.intel.com/pressroom/kits/quickreffam.htm"
+      ],
+      "release_month": "11",
+      "release_year": "2008",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "4",
+        "frequency": "3200",
+        "specint": "33.6",
+        "transistors": "781",
+        "watts": "130"
+      },
+      "transistors_billion": "0.781",
+      "typical_power_tdp_watts": "130"
+    },
+    {
+      "frequency_ghz": "2.66",
+      "logical_threads_or_compute_units": "6",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-dunnington-x7460-2009-04-01",
+      "processor_name": "Dunnington (X7460)",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L76",
+        "https://github.com/cornell-brg/processor-trends",
+        "https://www.intel.com/pressroom/kits/quickreffam.htm",
+        "https://www.intel.com/pressroom/archive/releases/2008/20080819comp.htm"
+      ],
+      "release_month": "04",
+      "release_year": "2009",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "6",
+        "frequency": "2660",
+        "specint": "",
+        "transistors": "1900",
+        "watts": "130"
+      },
+      "transistors_billion": "1.9",
+      "typical_power_tdp_watts": "130"
+    },
+    {
+      "frequency_ghz": "3.2",
+      "logical_threads_or_compute_units": "8",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-gainestown-w5580-2009-04-01",
+      "processor_name": "Gainestown (W5580)",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L77",
+        "https://github.com/cornell-brg/processor-trends",
+        "https://www.intel.com/content/dam/www/public/us/en/documents/datasheets/xeon-5500-vol-1-datasheet.pdf"
+      ],
+      "release_month": "04",
+      "release_year": "2009",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "8",
+        "frequency": "3200",
+        "specint": "",
+        "transistors": "2300",
+        "watts": "130"
+      },
+      "transistors_billion": "2.3",
+      "typical_power_tdp_watts": "130"
+    },
+    {
+      "frequency_ghz": "2.3",
+      "logical_threads_or_compute_units": "16",
+      "manufacturer": "Sun",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-sun-rock-2009-09-01",
+      "processor_name": "Rock",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L79",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "09",
+      "release_year": "2009",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "16",
+        "frequency": "2300",
+        "specint": "",
+        "transistors": "410",
+        "watts": ""
+      },
+      "transistors_billion": "0.41",
+      "typical_power_tdp_watts": ""
+    },
+    {
+      "frequency_ghz": "2.8",
+      "logical_threads_or_compute_units": "4",
+      "manufacturer": "Intel",
+      "match_confidence": "high",
+      "notes": "Matched against the cleaned Cornell processor-trends source derived from and independently checked against the Stanford/Horowitz data.",
+      "parallel_unit_basis": "physical cores",
+      "processor_id": "cornell-intel-i7-860-2009-09-01",
+      "processor_name": "i7-860",
+      "processor_type": "CPU",
+      "provenance_tier": "original_author_dataset",
+      "reference_urls": [
+        "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv#L80",
+        "https://github.com/cornell-brg/processor-trends"
+      ],
+      "release_month": "09",
+      "release_year": "2009",
+      "single_thread_performance_specint": "",
+      "source_values": {
+        "cores": "4",
+        "frequency": "2800",
+        "specint": "37.9",
+        "transistors": "774",
+        "watts": "95"
+      },
+      "transistors_billion": "0.774",
+      "typical_power_tdp_watts": "95"
+    }
+  ],
+  "matching_policy": {
+    "ambiguous": "Leave the processor blank when two source processors can explain the same plotted marker.",
+    "known_discrepancies": [
+      "15 post-2010 SPECint plot/source conversion conflicts",
+      "Xeon E5-2699 v3 chart 140 W versus source 145 W",
+      "digitized graph x-coordinates versus documented dates",
+      "Xeon W5580 graph 36.6 versus cited SPEC result 36.7"
+    ],
+    "legacy_second_pass": "Require agreement across at least three metric fields within a tight graph-year cluster and reject non-unique core-count overlaps.",
+    "validated_export": "Include only direct and high-confidence named rows whose plotted value is source-supported; exclude unresolved rows and approved graph/source conflicts."
+  },
+  "schema_version": 3,
+  "sources": {
+    "ibm_power6": "https://research.ibm.com/publications/ibm-power6-microprocessor-physical-design-and-design-methodology",
+    "intel_e5_2699_v3": "https://www.intel.com/content/www/us/en/products/sku/81061/intel-xeon-processor-e52699-v3-45m-cache-2-30-ghz/specifications.html",
+    "intel_quick_reference": "https://www.intel.com/pressroom/kits/quickreffam.htm",
+    "legacy_clean_data": "https://github.com/cornell-brg/processor-trends/blob/main/data/processor-trends.csv",
+    "legacy_original_author": "https://github.com/cornell-brg/processor-trends",
+    "oracle_opensparc": "https://www.oracle.com/servers/technologies/opensparc.html",
+    "repository_additions": "https://github.com/karlrupp/microprocessor-trend-data/blob/master/newdata.txt",
+    "spec_cpu2006": "https://www.spec.org/cpu2006/results/",
+    "spec_cpu2017": "https://www.spec.org/cpu2017/results/"
+  },
+  "supplemental_single_thread_performance": {
+    "cornell-mips-r2000-1986-01-01": {
+      "basis": "",
+      "confidence": "unresolved",
+      "notes": "A 16.67 MHz R2000 system has a published early SPEC integer result, but no defensible conversion from that pre-SPEC92 result to the chart's normalized SPECint2006-equivalent scale was found.",
+      "reference_urls": [
+        "https://digicoll.lib.berkeley.edu/record/138275/files/CSD-93-767.pdf"
+      ],
+      "status": "unresolved_cross_suite",
+      "value": ""
+    },
+    "cornell-amd-am486-1993-03-01": {
+      "basis": "",
+      "confidence": "unresolved",
+      "notes": "The source identifies only the Am486 family at 40 MHz. Published SPECint92 material does not identify a sufficiently specific AMD model and system configuration for a defensible assignment.",
+      "reference_urls": [
+        "https://www.cecs.uci.edu/~papers/mpr/MPR/ARTICLES/061302.pdf"
+      ],
+      "status": "unresolved_model_ambiguity",
+      "value": ""
+    },
+    "cornell-amd-k5-1996-03-01": {
+      "basis": "",
+      "confidence": "unresolved",
+      "notes": "Contemporary sources publish estimated SPECint92 targets for K5, not a verified result for the exact 90 MHz record, and no defensible cross-suite conversion was found.",
+      "reference_urls": [
+        "https://www.cl.cam.ac.uk/teaching/0405/CompArch/Gwennap95-P6_Microarchitecture.pdf"
+      ],
+      "status": "unresolved_estimate_only",
+      "value": ""
+    },
+    "cornell-sun-ultrasparc-t1-niagara-2005-07-01": {
+      "basis": "",
+      "confidence": "unresolved",
+      "notes": "No published SPEC CPU integer speed or rate result was found for the 1.2 GHz UltraSPARC T1. Other integer and web-server benchmarks are not convertible to SPECint.",
+      "reference_urls": [
+        "https://www.spec.org/cpu2006/"
+      ],
+      "status": "unresolved_no_spec_cpu_result",
+      "value": ""
+    },
+    "cornell-amd-turion-64-x2-mt-40-lancaster-2005-08-01": {
+      "basis": "",
+      "confidence": "unresolved",
+      "notes": "The source record conflicts internally: MT-40 Lancaster is a 2.2 GHz single-core part, while the row says two cores. A nearby TL-60 result cannot safely be assigned to this ambiguous identity.",
+      "reference_urls": [
+        "https://www.spec.org/cpu2006/results/res2007q3/cpu2006-20070723-01527.pdf",
+        "https://pc.watch.impress.co.jp/docs/article/modelno/amdold.htm"
+      ],
+      "status": "unresolved_identity_conflict",
+      "value": ""
+    },
+    "cornell-ibm-cell-2007-05-05": {
+      "basis": "",
+      "confidence": "unresolved",
+      "notes": "Cell combines one control-oriented PPE with eight specialized SPEs. No official SPECint result for this heterogeneous configuration was found, and its floating-point throughput is not convertible to SPECint.",
+      "reference_urls": [
+        "https://www.spec.org/cpu2006/"
+      ],
+      "status": "not_applicable_heterogeneous",
+      "value": ""
+    },
+    "cornell-sun-ultrasparc-t2-niagara-2-2007-07-01": {
+      "basis": "SPECint_rate2006 peak divided by physical cores",
+      "confidence": "medium",
+      "notes": "Estimated as 78.5 / 8 physical cores = 9.8125 for the matching 1.417 GHz UltraSPARC T2 system. This is a per-core throughput proxy, not a submitted SPECint2006 speed result.",
+      "reference_urls": [
+        "https://www.spec.org/cpu2006/results/res2007q4/cpu2006-20071009-02247.html"
+      ],
+      "status": "inferred_from_rate_per_core",
+      "value": "9.8"
+    },
+    "cornell-amd-phenom-9600-2007-09-01": {
+      "basis": "same-microarchitecture SPECint2006 speed proxy",
+      "confidence": "medium",
+      "notes": "No official Phenom 9600 submission was found. The value uses an official 2.3 GHz AMD Opteron 2356 result from the same K10/Barcelona generation as a system-level proxy.",
+      "reference_urls": [
+        "https://www.spec.org/cpu2006/results/res2008q2/cpu2006-20080317-03767.pdf"
+      ],
+      "status": "inferred_from_same_architecture_and_frequency",
+      "value": "14.8"
+    },
+    "cornell-amd-phenom-x3-8850-2008-10-01": {
+      "basis": "same-microarchitecture SPECint2006 speed proxy",
+      "confidence": "medium",
+      "notes": "No official Phenom X3 8850 submission was found. The value uses an official 2.5 GHz AMD Opteron 2360 SE result from the same K10 generation as a system-level proxy.",
+      "reference_urls": [
+        "https://www.spec.org/cpu2006/results/res2008q2/cpu2006-20080519-04352.pdf"
+      ],
+      "status": "inferred_from_same_architecture_and_frequency",
+      "value": "15.2"
+    },
+    "cornell-intel-dunnington-x7460-2009-04-01": {
+      "basis": "SPECint2006 peak",
+      "confidence": "direct",
+      "notes": "Official SPEC CPU2006 integer speed result for the exact Intel Xeon X7460 at 2.66 GHz.",
+      "reference_urls": [
+        "https://www.spec.org/cpu2006/results/res2008q4/cpu2006-20080915-05342.pdf"
+      ],
+      "status": "source_reported",
+      "value": "25"
+    },
+    "cornell-intel-gainestown-w5580-2009-04-01": {
+      "basis": "SPECint2006 peak",
+      "confidence": "direct",
+      "notes": "Official SPEC CPU2006 integer speed result for the exact Intel Xeon W5580 at 3.20 GHz.",
+      "reference_urls": [
+        "https://www.spec.org/cpu2006/results/res2009q2/cpu2006-20090330-06862.pdf"
+      ],
+      "status": "source_reported",
+      "value": "36.7"
+    },
+    "cornell-sun-rock-2009-09-01": {
+      "basis": "",
+      "confidence": "unresolved",
+      "notes": "Rock was cancelled before commercial release. No validated production-system SPECint result exists for a defensible assignment.",
+      "reference_urls": [],
+      "status": "unresolved_cancelled_processor",
+      "value": ""
+    },
+    "newdata-power7-780-2012-08": {
+      "basis": "SPECint_rate2006 peak divided by physical cores",
+      "confidence": "medium",
+      "notes": "Estimated as 4140 / 128 physical cores = 32.34375. This is a per-core throughput proxy, not a submitted SPECint2006 speed result.",
+      "reference_urls": [
+        "https://spec.org/cpu2006/results/res2012q4/cpu2006-20121002-24655.pdf"
+      ],
+      "status": "inferred_from_rate_per_core",
+      "value": "32.3"
+    },
+    "newdata-xeon-phi-2013-05": {
+      "basis": "",
+      "confidence": "unresolved",
+      "notes": "The repository names only the Xeon Phi family, not a unique model. No defensible single-thread SPECint value was assigned.",
+      "reference_urls": [],
+      "status": "unresolved",
+      "value": ""
+    },
+    "newdata-power8-s814-2014-06": {
+      "basis": "SPECint_rate2006 peak divided by physical cores",
+      "confidence": "medium",
+      "notes": "Estimated as 261 / 4 physical cores = 65.25. This is a per-core throughput proxy from the matching S814 system, not a submitted SPECint2006 speed result.",
+      "reference_urls": [
+        "https://www.spec.org/cpu2006/results/res2015q2/cpu2006-20150513-36365.pdf"
+      ],
+      "status": "inferred_from_rate_per_core",
+      "value": "65.3"
+    },
+    "newdata-xeon-phi-7290-2016-06": {
+      "basis": "SPECint_rate2006 peak divided by physical cores",
+      "confidence": "medium",
+      "notes": "Estimated as 1220 / 72 physical cores = 16.944. This is a per-core throughput proxy and is sensitive to the four hardware threads used per core.",
+      "reference_urls": [
+        "https://www.spec.org/cpu2006/results/res2017q1/cpu2006-20170220-46664.pdf"
+      ],
+      "status": "inferred_from_rate_per_core",
+      "value": "16.9"
+    },
+    "newdata-power8-2016-08": {
+      "basis": "SPECint_rate2006 peak divided by physical cores",
+      "confidence": "medium",
+      "notes": "The generic 4.0 GHz POWER8 entry is matched to the 4.0 GHz Power E880 result and estimated as 14400 / 192 physical cores = 75.0.",
+      "reference_urls": [
+        "https://spec.org/cpu2006/results/res2015q2/cpu2006-20150427-35966.html"
+      ],
+      "status": "inferred_from_rate_per_core",
+      "value": "75"
+    },
+    "newdata-epyc-7601-2017-06": {
+      "basis": "SPECspeed2017_int peak multiplied by 9",
+      "confidence": "high",
+      "notes": "Converted from the official SPECspeed2017_int peak score using the repository's documented 9.0 cross-suite factor: 7.33 x 9 = 65.97.",
+      "reference_urls": [
+        "https://spec.org/cpu2017/results/res2018q4/cpu2017-20181126-09823.html"
+      ],
+      "status": "suite_converted",
+      "value": "66"
+    },
+    "newdata-power9-ac922-2018-04": {
+      "basis": "POWER9 SPECrate2017_int peak per physical core multiplied by 9",
+      "confidence": "medium",
+      "notes": "No AC922 integer speed submission was found. Estimated from the same-frequency POWER9 S924 result: (277 / 24 physical cores) x 9 = 103.875.",
+      "reference_urls": [
+        "https://spec.org/cpu2017/results/res2018q2/cpu2017-20180318-04004.html"
+      ],
+      "status": "inferred_from_rate_per_core_and_suite_conversion",
+      "value": "103.9"
+    },
+    "newdata-quadro-gv100-2018-05": {
+      "basis": "",
+      "confidence": "unresolved",
+      "notes": "Not applicable: GPU floating-point throughput cannot be converted into a CPU SPECint single-thread score.",
+      "reference_urls": [],
+      "status": "not_applicable_gpu",
+      "value": ""
+    },
+    "newdata-m1-2020-09": {
+      "basis": "estimated SPECint2017 speed multiplied by 9",
+      "confidence": "medium",
+      "notes": "Converted from AnandTech's estimated SPECint2017 single-thread score using the repository's 9.0 factor: 6.66 x 9 = 59.94. This was not an official SPEC submission.",
+      "reference_urls": [
+        "https://www.anandtech.com/show/16252/mac-mini-apple-m1-tested/4"
+      ],
+      "status": "suite_converted_external_estimate",
+      "value": "59.9"
+    },
+    "newdata-m1-max-2021-08": {
+      "basis": "M1 SPECint2017 single-thread proxy multiplied by 9",
+      "confidence": "medium",
+      "notes": "AnandTech found M1 Max single-thread performance changed little from M1 because both use 3.23 GHz Firestorm cores. The M1 converted value, 6.66 x 9 = 59.94, is used as a proxy.",
+      "reference_urls": [
+        "https://www.anandtech.com/show/16252/mac-mini-apple-m1-tested/4",
+        "https://www.anandtech.com/show/17024/apple-m1-max-performance-review/4"
+      ],
+      "status": "inferred_from_same_core_proxy",
+      "value": "59.9"
+    },
+    "newdata-graviton-3-2021-09": {
+      "basis": "",
+      "confidence": "unresolved",
+      "notes": "AWS publishes relative estimated SPECint2017 rate improvements, but no absolute single-thread score suitable for the chart's conversion was found.",
+      "reference_urls": [
+        "https://d1.awsstatic.com/events/reinvent/2021/New_Launch_Deep_dive_into_AWS_Graviton3_and_Amazon_EC2_C7g_instances_CMP332.pdf"
+      ],
+      "status": "unresolved",
+      "value": ""
+    },
+    "newdata-radeon-mi250-2021-09": {
+      "basis": "",
+      "confidence": "unresolved",
+      "notes": "Not applicable: GPU floating-point throughput cannot be converted into a CPU SPECint single-thread score.",
+      "reference_urls": [],
+      "status": "not_applicable_gpu",
+      "value": ""
+    }
+  },
+  "unresolved_point_notes": {
+    "series-cores-point-012": "No unique multi-field assignment after the second research pass; plausible original-source clusters: Sun SuperSparc, Mips R4000.",
+    "series-cores-point-014": "No unique multi-field assignment after the second research pass; plausible original-source clusters: Intel Pentium, AMD Am486.",
+    "series-cores-point-015": "No unique multi-field assignment after the second research pass; plausible original-source clusters: Mips R4600, DEC Alpha 21064A.",
+    "series-cores-point-018": "No unique multi-field assignment after the second research pass; plausible original-source clusters: Intel Pentium Pro, Sun UltraSparc I.",
+    "series-cores-point-019": "No unique multi-field assignment after the second research pass; plausible original-source clusters: Mips R5000, Mips R10000, AMD K5.",
+    "series-cores-point-022": "No unique multi-field assignment after the second research pass; plausible original-source clusters: AMD K6, Sun UltraSparc II, DEC Alpha 21164PC.",
+    "series-cores-point-023": "No unique multi-field assignment after the second research pass; plausible original-source clusters: AMD K6, Intel Pentium II (klamath).",
+    "series-cores-point-025": "No unique multi-field assignment after the second research pass; plausible original-source clusters: AMD K6-2, Mips R12000.",
+    "series-cores-point-026": "No unique multi-field assignment after the second research pass; plausible original-source clusters: AMD K6-III, Intel Pentium III (katmai).",
+    "series-cores-point-028": "No unique multi-field assignment after the second research pass; plausible original-source clusters: AMD Athlon Tbird, Intel Pentium III (coppermine).",
+    "series-cores-point-029": "No unique multi-field assignment after the second research pass; plausible original-source clusters: Sun UltraSparc III, Intel Pentium 4 (willamette).",
+    "series-cores-point-039": "No unique multi-field assignment after the second research pass; plausible original-source clusters: AMD Athlon 64 FX-55, Intel Pentium 4 (prescott), AMD Athlon 64 FX-57.",
+    "series-cores-point-044": "No unique multi-field assignment after the second research pass; plausible original-source clusters: Intel Core 2 Duo (E6700), Intel Pentium D (950), AMD Athlon 64 5000+ (Brisbane), AMD Athlon 64 FX-62 (Windsor).",
+    "series-cores-point-051": "No unique multi-field assignment after the second research pass; plausible original-source clusters: AMD Opteron 8350, AMD Phenom 9600.",
+    "series-cores-point-055": "Several four-core processors overlap here; the second pass could not identify which processor produced this visible marker.",
+    "series-cores-point-056": "The three-core marker is plausible for Phenom II X3 720, but only one additional non-distinctive source field remains visible.",
+    "series-frequency-point-022": "No unique multi-field assignment after the second research pass; plausible original-source clusters: Mips R10000, Mips R5000, Sun UltraSparc I, Intel Pentium Pro.",
+    "series-frequency-point-035": "No unique multi-field assignment after the second research pass; plausible original-source clusters: AMD Athlon Tbird, Intel Pentium III (coppermine).",
+    "series-frequency-point-055": "No unique multi-field assignment after the second research pass; plausible original-source clusters: Intel Core 2 Duo (E6700), AMD Athlon 64 5000+ (Brisbane), AMD Athlon 64 FX-62 (Windsor), Intel Core 2 Ex (X6800).",
+    "series-specint-point-028": "No unique multi-field assignment after the second research pass; plausible original-source clusters: AMD Athlon Tbird, Intel Pentium III (coppermine).",
+    "series-transistors-point-073": "No processor matched the plotted date and value across at least three independently recorded fields.",
+    "series-watts-point-012": "No unique multi-field assignment after the second research pass; plausible original-source clusters: Sun SuperSparc, Mips R4000.",
+    "series-watts-point-021": "No unique multi-field assignment after the second research pass; plausible original-source clusters: Mips R10000, Intel Pentium Pro, Sun UltraSparc I.",
+    "series-watts-point-055": "No unique multi-field assignment after the second research pass; plausible original-source clusters: Intel Core 2 Duo (E6700), AMD Athlon 64 5000+ (Brisbane).",
+    "series-watts-point-068": "No processor matched the plotted date and value across at least three independently recorded fields.",
+    "series-watts-point-069": "No unique multi-field assignment after the second research pass; plausible original-source clusters: Intel i7-860, AMD Phenom II X3 720.",
+    "series-watts-point-070": "No unique multi-field assignment after the second research pass; plausible original-source clusters: Intel Dunnington (X7460), Intel Gainestown (W5580), Intel i7-980X.",
+    "series-watts-point-071": "No processor matched the plotted date and value across at least three independently recorded fields."
+  }
+}

@@ -4,3 +4,10 @@
 # Python bytecode
 __pycache__/
 *.py[cod]
+
+# Astro site build output and dependencies
+55yrs-compute/site/node_modules/
+55yrs-compute/site/dist/
+55yrs-compute/site/.astro/
+55yrs-compute/site/.wrangler/
+55yrs-compute/site/wrangler.*

@@ -1,0 +1,20 @@
+{
+  "benchmark": "SPECrate2017_int_base",
+  "scope": "one physical CPU package in the tested system",
+  "results": [
+    {"device_id": "newdata-epyc-7601-2017-06", "value": 135, "chips": 1, "system": "Sugon A320-G30", "reference_url": "https://www.spec.org/cpu2017/results/res2017q4/cpu2017-20171211-01450.html"},
+    {"device_id": "newdata-xeon-pl-8180-2017-07", "value": 141, "chips": 1, "system": "Lenovo ThinkSystem SR650", "reference_url": "https://www.spec.org/cpu2017/results/res2017q4/cpu2017-20171017-00153.html"},
+    {"device_id": "intel-core-i9-9900k", "value": 51.0, "chips": 1, "system": "Supermicro SuperWorkstation 5039C-T", "reference_url": "https://www.spec.org/cpu2017/results/res2019q1/cpu2017-20190107-10466.html"},
+    {"device_id": "newdata-xeon-pl-8280-2019-03", "value": 178, "chips": 1, "system": "Huawei 1288H V5", "reference_url": "https://www.spec.org/cpu2017/results/res2019q2/cpu2017-20190318-11222.html"},
+    {"device_id": "newdata-epyc-7742-2019-08", "value": 349, "chips": 1, "system": "Lenovo ThinkSystem SR655", "reference_url": "https://www.spec.org/cpu2017/results/res2019q3/cpu2017-20190722-16290.html"},
+    {"device_id": "ampere-altra", "value": 301, "chips": 1, "system": "GIGABYTE R152-P30-00 (Altra Q80-33)", "reference_url": "https://www.spec.org/cpu2017/results/res2021q3/cpu2017-20210811-28660.html"},
+    {"device_id": "amd-epyc-7763", "value": 426, "chips": 1, "system": "Cisco UCS C245 M6", "reference_url": "https://www.spec.org/cpu2017/results/res2021q3/cpu2017-20210622-27665.html"},
+    {"device_id": "ampere-altra-max", "value": 356, "chips": 1, "system": "Supermicro ARS-210M-NR (Altra Max M128-30)", "reference_url": "https://www.spec.org/cpu2017/results/res2022q4/cpu2017-20221205-32963.html"},
+    {"device_id": "amd-epyc-9654", "value": 777, "chips": 1, "system": "Supermicro A+ Server 1115CS-TNR", "reference_url": "https://www.spec.org/cpu2017/results/res2022q4/cpu2017-20221025-32663.html"},
+    {"device_id": "intel-xeon-8480-plus", "value": 448, "chips": 1, "system": "Supermicro SYS-521C-NR", "reference_url": "https://www.spec.org/cpu2017/results/res2023q4/cpu2017-20230925-39180.html"},
+    {"device_id": "amd-epyc-9754", "value": 926, "chips": 1, "system": "Supermicro AS-2015CS-TNR", "reference_url": "https://www.spec.org/cpu2017/results/res2023q2/cpu2017-20230523-36880.html"},
+    {"device_id": "intel-xeon-8592-plus", "value": 550, "chips": 1, "system": "IEIT i22M7", "reference_url": "https://www.spec.org/cpu2017/results/res2024q2/cpu2017-20240520-43522.html"},
+    {"device_id": "amd-epyc-9965", "value": 1400, "chips": 1, "system": "HPE ProLiant Compute DL345 Gen12", "reference_url": "https://www.spec.org/cpu2017/results/res2025q3/cpu2017-20250714-49076.html"},
+    {"device_id": "intel-xeon-6980p", "value": 1220, "chips": 1, "system": "H3C UniServer R3900 G7", "reference_url": "https://www.spec.org/cpu2017/results/res2024q4/cpu2017-20241008-45004.html"}
+  ]
+}
