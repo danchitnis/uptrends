@@ -1,85 +1,41 @@
-# Building the Charts
+# Building the uP Trend Chart
 
 ## Requirements
 
-- Python 3.10 or newer
-- gnuplot with Cairo terminal support
-- Python packages listed in `requirements.txt`
+- Python 3.11 or newer
+- Bash
+- Node.js only for the interactive site
 
-Install the Python packages:
+From the repository root, run:
 
 ```sh
-python3 -m pip install -r requirements.txt
+./generate_uptrend.sh
 ```
 
-## Generate all charts
+The script creates `.venv/`, installs `requirements.txt`, rebuilds the
+historical processor input CSV, and generates `uptrend/uptrend-chart.png`,
+`.svg`, `.pdf`, and `.eps`. It also regenerates the device and observation CSVs
+and `uptrend/uptrend-chart-data.json`. The local environment is ignored by Git.
+All four chart exports use the same 2300×1500 layout and labels.
+
+To regenerate selected formats after setup:
 
 ```sh
-python3 generate_plots.py
+.venv/bin/python generate_uptrend.py --formats svg pdf
 ```
 
-## Select editions
+Run `generate_uptrend_legacy.py` first if you change data under
+`uptrend/legacy-inputs/`.
+
+## Interactive site
 
 ```sh
-python3 generate_plots.py --editions 40 48
-```
-
-Available editions are `40`, `42`, `48`, and `50`.
-
-## Select formats
-
-```sh
-python3 generate_plots.py --formats png svg pdf eps
-```
-
-Available formats are `png`, `svg`, `pdf`, and `eps`.
-
-Edition and format selections can be combined:
-
-```sh
-python3 generate_plots.py --editions 42 48 --formats svg pdf
-```
-
-Generated files are written to the corresponding year directory.
-
-## Generate the 50-year CSV exports
-
-```sh
-python3 generate_50yrs_csv.py
-```
-
-The complete ledger and processor view are written to `50yrs/`; the verified-only
-point export is written to `50yrs-verified/` after checking the dataset.
-
-## Generate the verified-only 50-year chart
-
-```sh
-python3 generate_plots.py --verified-only
-```
-
-The PNG, SVG, PDF, and EPS outputs are written to `50yrs-verified/`.
-
-## Generate the CPU/GPU compute-trends edition
-
-```sh
-python3 generate_compute_trends.py
-```
-
-Use `--formats png svg pdf eps` to select formats. The two provenance CSVs,
-device-linked chart-data JSON, and four chart files are written to `55yrs-compute/`.
-
-## Build the interactive Astro page
-
-```sh
-cd 55yrs-compute/site
+cd uptrend/site
 npm install
 npm run dev
 ```
 
-Open the local URL printed by Astro. For a static release, run `npm run build`;
-the single page is written to `55yrs-compute/site/dist/`. Re-run
-`python3 generate_compute_trends.py` before building after changing chart data.
-
-For a local Cloudflare Workers preview, run `npm run preview`. To publish after
-signing in to Cloudflare, run `npm run deploy`. These commands use a local,
-Git-ignored `wrangler.jsonc` whose `assets.directory` is `./dist`.
+Run `npm run build` for a static build in `uptrend/site/dist/`. Regenerate the
+chart before building the site after changing chart data. The optional
+`npm run preview` and `npm run deploy` commands use a local, Git-ignored
+`wrangler.jsonc` whose `assets.directory` is `./dist`.
